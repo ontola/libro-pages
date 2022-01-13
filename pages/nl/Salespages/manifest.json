@@ -1,5 +1,5 @@
 {
-  "rdf_type": "https://argu.localdev/ns/core#Manifest",
+  "rdf_type": "https://argu.co/ns/core#Manifest",
   "lang": "nl-NL",
   "name": "Argu Informatie",
   "display": "standalone",
@@ -13,18 +13,18 @@
       "https://dptr8y9slmfgv.cloudfront.net"
     ],
     "preload": [
-      "https://argu.localdev/info/menus"
+      "https://argu.co/info/menus"
     ],
     "primary_color": "#2D7080",
     "secondary_color": "#B33A00",
     "styled_headers": null,
     "theme": "salesWebsite",
-    "theme_options": "footerResource=https%3A%2F%2Fargu.localdev%2Finfo%2Fmenus%2Ffooter",
+    "theme_options": "footerResource=https%3A%2F%2Fargu.co%2Finfo%2Fmenus%2Ffooter",
     "tracking": [],
-    "website_iri": "https://argu.localdev/info"
+    "website_iri": "https://argu.co/info"
   },
   "serviceworker": {
-    "src": "https://argu.localdev/sw.js?manifestLocation=https%3A%2F%2FFargu.localdev%2Finfo%2Fmanifest.json",
+    "src": "https://argu.co/sw.js?manifestLocation=https%3A%2F%2FFargu.co%2Finfo%2Fmanifest.json",
     "scope": "/info"
   },
   "short_name": "Argu",

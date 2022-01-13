@@ -11,17 +11,17 @@ const commonProductProps = {
   [sales.backgroundImageMobile]: asset('/sales/images/header_mobile.svg'),
   [sales.buttonLink]: url('https://calendly.com/argu_co/online-demo'),
   [sales.buttonText]: 'Plan een demo',
-  [sales.propositions]: url('https://argu.localdev/info#propositions'),
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.propositions]: url('https://argu.co/info#propositions'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 };
 /***************** HOME PAGE *****************/
 
 [({
-  "@id": "https://argu.localdev/info",
+  "@id": "https://argu.co/info",
   [rdfx.type]: sales.HomePage,
   [schema.name]: 'Argu - Beslis samen beter',
   [schema.description]: 'Argu is een gebruiksklaar participatieplatform voor iedere organisatie. Betrek meer burgers, bouw een community en beslis beter.  Vraag vrijblijvend een demo aan.',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [sales.header]: {
     [rdfx.type]: sales.Header,
     [schema.name]: 'Beslis samen beter',
@@ -30,7 +30,7 @@ const commonProductProps = {
     [sales.buttonText]: 'Plan een demo',
     ...commonHeaderBGProps,
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
   [ontola.navigationsMenu]: {
     [rdfx.type]: ontola.MenuItem,
     [sales.callToAction]: {
@@ -47,64 +47,64 @@ const commonProductProps = {
           [ontola['format/svg']]: asset("/sales/images/argu-logo.svg"),
           [ontola['format/png']]: asset("/sales/images/argu-logo.png")
         },
-        [schema.isPartOf]: url("https://argu.localdev/info"),
+        [schema.isPartOf]: url("https://argu.co/info"),
         [schema.name]: "Argu",
-        [ontola.href]: url("https://argu.localdev/info"),
+        [ontola.href]: url("https://argu.co/info"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Functionaliteiten",
-        [ontola.href]: url("https://argu.localdev/info/functionaliteiten"),
+        [ontola.href]: url("https://argu.co/info/functionaliteiten"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Prijzen",
-        [ontola.href]: url("https://argu.localdev/info/prijzen"),
+        [ontola.href]: url("https://argu.co/info/prijzen"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Cases",
-        [ontola.href]: url("https://argu.localdev/info/cases"),
+        [ontola.href]: url("https://argu.co/info/cases"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Werkwijze",
-        [ontola.href]: url("https://argu.localdev/info/werkwijze"),
+        [ontola.href]: url("https://argu.co/info/werkwijze"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Over",
-        [ontola.href]: url("https://argu.localdev/info/over-ons"),
+        [ontola.href]: url("https://argu.co/info/over-ons"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Academy",
-        [ontola.href]: url("https://argu.localdev/academy"),
+        [ontola.href]: url("https://argu.co/academy"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Blog",
-        [ontola.href]: url("https://argu.localdev/info/blog"),
+        [ontola.href]: url("https://argu.co/info/blog"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Contact",
-        [ontola.href]: url("https://argu.localdev/info/contact"),
+        [ontola.href]: url("https://argu.co/info/contact"),
       },
       {
         [rdfx.type]: ontola.MenuItem,
         [schema.name]: "Help",
-        [ontola.href]: url("https://argu.localdev/argu/help"),
+        [ontola.href]: url("https://argu.co/argu/help"),
       },
     ]),
   },
 
   [sales.showcase]: {
     [rdfx.type]: rdfx.Seq,
-    [rdfx.ns('_01')]: url("https://argu.localdev/info/participatie"),
-    [rdfx.ns('_02')]: url("https://argu.localdev/info/huurdersparticipatie"),
-    [rdfx.ns('_03')]: url("https://argu.localdev/info/community"),
-    [rdfx.ns('_04')]: url("https://argu.localdev/info/energietransitie"),
+    [rdfx.ns('_01')]: url("https://argu.co/info/participatie"),
+    [rdfx.ns('_02')]: url("https://argu.co/info/huurdersparticipatie"),
+    [rdfx.ns('_03')]: url("https://argu.co/info/community"),
+    [rdfx.ns('_04')]: url("https://argu.co/info/energietransitie"),
   },
 
   [sales.cases]: {
@@ -120,12 +120,12 @@ const commonProductProps = {
       [ontola.ns('format/webp')]: asset('/sales/images/klantlogos.webp'),
     },
 
-    [sales.caseShowcase]: url('https://argu.localdev/info#highlightedCases'),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseShowcase]: url('https://argu.co/info#highlightedCases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
 
-  [sales.propositions]: url('https://argu.localdev/info#propositions'),
+  [sales.propositions]: url('https://argu.co/info#propositions'),
 
   [sales.duoBlock]: {
     [rdfx.type]: rdfx.Seq,
@@ -134,7 +134,7 @@ const commonProductProps = {
       [schema.color]: '#2D7080',
       [sales.textColor]: "#FFF",
       [schema.text]: 'Argu is het meest complete pakket voor online besluitvorming. Laat mensen eenvoudig meedenken, krijg inzicht in draagvlak en maak samen betere beslissingen.',
-      [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+      [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
       [sales.buttonText]: "Functionaliteiten",
     },
     [rdfx.ns('_02')]: {
@@ -143,7 +143,7 @@ const commonProductProps = {
       [sales.textColor]: "#000",
       [schema.name]: "Hoe werkt het?",
       [schema.text]: 'Na het begeleiden van meer dan 150 online trajecten voor onder anderen gemeenten, provincies, ministeries, woningcorporaties en bedrijven hebben we uitgebreide kennis en ervaring opgebouwd en gebundeld in een efficiënte aanpak',
-      [sales.buttonLink]: url("https://argu.localdev/info/werkwijze"),
+      [sales.buttonLink]: url("https://argu.co/info/werkwijze"),
       [sales.buttonText]: "Onze werkwijze",
     },
   },
@@ -155,9 +155,9 @@ const commonProductProps = {
     [schema.description]: 'Blijf op de hoogte van het laatste nieuws',
     [sales.blogShowcase]: {
       [rdfx.type]: rdfx.Seq,
-      [rdfx.ns('_01')]: url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
-      [rdfx.ns('_02')]: url('https://argu.localdev/info/blogs/5-checks-voordat-je-aan-e-participatie-begint'),
-      [rdfx.ns('_03')]: url('https://argu.localdev/info/blogs/argu-lanceert-openBesluitvorming'),
+      [rdfx.ns('_01')]: url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
+      [rdfx.ns('_02')]: url('https://argu.co/info/blogs/5-checks-voordat-je-aan-e-participatie-begint'),
+      [rdfx.ns('_03')]: url('https://argu.co/info/blogs/argu-lanceert-openBesluitvorming'),
     },
   },
 
@@ -166,7 +166,7 @@ const commonProductProps = {
 /***************** FOOTER *****************/
 
 {
-  '@id': 'https://argu.localdev/menus/footer/argu',
+  '@id': 'https://argu.co/menus/footer/argu',
   [rdfx.type]: ontola.MenuItem,
   [schema.name]: 'Argu',
   [argu.ns('menuLabel')]: 'Argu',
@@ -185,7 +185,7 @@ const commonProductProps = {
 /***************** PRODUCT PAGES *****************/
 
 {
-  "@id": "https://argu.localdev/info/participatie",
+  "@id": "https://argu.co/info/participatie",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Participatie',
@@ -220,7 +220,7 @@ const commonProductProps = {
           }, // END Text
           {
             [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.localdev/info/inwonerspanel'),
+            [ontola.href]: url('https://argu.co/info/inwonerspanel'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
@@ -234,7 +234,7 @@ const commonProductProps = {
           }, // END Text
           {
             [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.localdev/info/forum'),
+            [ontola.href]: url('https://argu.co/info/forum'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
@@ -300,8 +300,8 @@ const commonProductProps = {
     [rdfx.type]: sales.Cases,
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot ideegeneratie: Argu is flexibel inzetbaar voor diverse participatietrajecten.',
-    [sales.caseShowcase]: url('https://argu.localdev/info#highlightedCases'),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseShowcase]: url('https://argu.co/info#highlightedCases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -312,27 +312,27 @@ const commonProductProps = {
     [schema.text]: 'Argu is het meest complete pakket voor online burgerparticipatie. Laat mensen eenvoudig meedenken, krijg inzicht in draagvlak en maak betere beslissingen.',
     [sales.featuresShowcase]: {
       [rdfx.type]: rdfx.Seq,
-      [rdfx.ns('_01')]: url('https://argu.localdev/info#vote'),
-      [rdfx.ns('_02')]: url('https://argu.localdev/info#filtration'),
-      [rdfx.ns('_03')]: url('https://argu.localdev/info#flag'),
-      [rdfx.ns('_04')]: url('https://argu.localdev/info#infographic'),
-      [rdfx.ns('_05')]: url('https://argu.localdev/info#checklist'),
+      [rdfx.ns('_01')]: url('https://argu.co/info#vote'),
+      [rdfx.ns('_02')]: url('https://argu.co/info#filtration'),
+      [rdfx.ns('_03')]: url('https://argu.co/info#flag'),
+      [rdfx.ns('_04')]: url('https://argu.co/info#infographic'),
+      [rdfx.ns('_05')]: url('https://argu.co/info#checklist'),
     },
-    [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+    [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: {
         [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_01')]: url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
+        [rdfx.ns('_01')]: url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
       },
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/community",
+  "@id": "https://argu.co/info/community",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Community',
@@ -579,8 +579,8 @@ const commonProductProps = {
     [rdfx.type]: sales.Cases,
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Het samen oplossen van uitdagingen. Of experts kennis laten delen. Benieuwd hoe anderen het doen? Lees onze cases.',
-    [sales.caseShowcase]: url('https://argu.localdev/info#highlightedCases'),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseShowcase]: url('https://argu.co/info#highlightedCases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -591,26 +591,26 @@ const commonProductProps = {
     [schema.text]: 'Argu is het meest complete pakket voor een succesvolle community. Laat mensen eenvoudig meedenken, Deel informatie en help elkaar. Enkele relevante functionaliteiten voor een community platform worden hieronder toegelicht. ',
     [sales.featuresShowcase]: {
       [rdfx.type]: rdfx.Seq,
-      [rdfx.ns('_01')]: url('https://argu.localdev/info#notification'),
-      [rdfx.ns('_02')]: url('https://argu.localdev/info#filtration'),
-      [rdfx.ns('_03')]: url('https://argu.localdev/info#bullhorn'),
-      [rdfx.ns('_04')]: url('https://argu.localdev/info#lock'),
+      [rdfx.ns('_01')]: url('https://argu.co/info#notification'),
+      [rdfx.ns('_02')]: url('https://argu.co/info#filtration'),
+      [rdfx.ns('_03')]: url('https://argu.co/info#bullhorn'),
+      [rdfx.ns('_04')]: url('https://argu.co/info#lock'),
     },
-    [sales.buttonLink]: url('https://argu.localdev/info/functionaliteiten'),
+    [sales.buttonLink]: url('https://argu.co/info/functionaliteiten'),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: {
         [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_01')]: url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
+        [rdfx.ns('_01')]: url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
       },
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/energietransitie",
+  "@id": "https://argu.co/info/energietransitie",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Energietransitie',
@@ -688,8 +688,8 @@ const commonProductProps = {
     [rdfx.type]: sales.Cases,
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot idee generatie: Argu is flexibel inzetbaar voor diverse participatietrajecten omtrent de energietransitie.',
-    [sales.caseShowcase]: url('https://argu.localdev/info#highlightedCases'),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseShowcase]: url('https://argu.co/info#highlightedCases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -700,26 +700,26 @@ const commonProductProps = {
     [schema.text]: 'Argu is het meest complete pakket om participatie te stimuleren bij de energietransitie. Laat mensen eenvoudig meedenken, krijg inzicht in draagvlak en maak betere beslissingen. Enkele relevante functionaliteiten voor een energietransitie platform worden hieronder toegelicht.',
     [sales.featuresShowcase]: {
       [rdfx.type]: rdfx.Seq,
-      [rdfx.ns('_01')]: url('https://argu.localdev/info#infographic'),
-      [rdfx.ns('_02')]: url('https://argu.localdev/info#lock'),
-      [rdfx.ns('_03')]: url('https://argu.localdev/info#photo'),
-      [rdfx.ns('_04')]: url('https://argu.localdev/info#checklist'),
+      [rdfx.ns('_01')]: url('https://argu.co/info#infographic'),
+      [rdfx.ns('_02')]: url('https://argu.co/info#lock'),
+      [rdfx.ns('_03')]: url('https://argu.co/info#photo'),
+      [rdfx.ns('_04')]: url('https://argu.co/info#checklist'),
     },
-    [sales.buttonLink]: url('https://argu.localdev/info/functionaliteiten'),
+    [sales.buttonLink]: url('https://argu.co/info/functionaliteiten'),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: {
         [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_01')]: url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
+        [rdfx.ns('_01')]: url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
       },
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/huurdersparticipatie",
+  "@id": "https://argu.co/info/huurdersparticipatie",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Huurdersparticipatie',
@@ -1008,11 +1008,11 @@ const commonProductProps = {
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot idee generatie: Argu is flexibel inzetbaar voor diverse participatietrajecten omtrent de huurdersparticipatie.',
     [sales.caseShowcase]: seq([
-      url('https://argu.localdev/info/cases/online-huurdersparticipatie-bij-thuisvester'),
-      url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
-      url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+      url('https://argu.co/info/cases/online-huurdersparticipatie-bij-thuisvester'),
+      url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+      url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
     ]),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
 
@@ -1025,27 +1025,27 @@ const commonProductProps = {
     [schema.text]: 'Argu is het meest complete pakket om huurders te laten participeren bij beleid en nauw contact te onderhouden. Laat huurders eenvoudig meedenken, krijg inzicht in draagvlak en maak betere beslissingen. Enkele relevante functionaliteiten voor een huurdersparticipatie platform worden hieronder toegelicht.',
     [sales.featuresShowcase]: {
       [rdfx.type]: rdfx.Seq,
-      [rdfx.ns('_01')]: url('https://argu.localdev/info#notification'),
-      [rdfx.ns('_02')]: url('https://argu.localdev/info#tenantFiltration'),
-      [rdfx.ns('_03')]: url('https://argu.localdev/info#bullhorn'),
-      [rdfx.ns('_04')]: url('https://argu.localdev/info#checklist'),
-      [rdfx.ns('_05')]: url('https://argu.localdev/info#budgetting'),
+      [rdfx.ns('_01')]: url('https://argu.co/info#notification'),
+      [rdfx.ns('_02')]: url('https://argu.co/info#tenantFiltration'),
+      [rdfx.ns('_03')]: url('https://argu.co/info#bullhorn'),
+      [rdfx.ns('_04')]: url('https://argu.co/info#checklist'),
+      [rdfx.ns('_05')]: url('https://argu.co/info#budgetting'),
     },
-    [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+    [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: {
         [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_01')]: url('https://argu.localdev/info/blogs/online-huurdersparticipatie-is-de-toekomst'),
+        [rdfx.ns('_01')]: url('https://argu.co/info/blogs/online-huurdersparticipatie-is-de-toekomst'),
       },
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/inwonerspanel",
+  "@id": "https://argu.co/info/inwonerspanel",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Inwonerspanel',
@@ -1232,11 +1232,11 @@ const commonProductProps = {
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot idee generatie: Argu is flexibel inzetbaar voor diverse participatietrajecten omtrent inwonersparticipatie',
     [sales.caseShowcase]: seq([
-      url('https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
-      url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
-      url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+      url('https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
+      url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+      url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
     ]),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -1246,26 +1246,26 @@ const commonProductProps = {
     [schema.name]: 'Functionaliteiten',
     [schema.text]: 'Argu is het meest complete pakket om inwoners te laten participeren bij beleid en nauw contact te onderhouden. Laat inwoners eenvoudig meedenken middels een inwonerspanel, krijg inzicht in draagvlak en maak betere beslissingen. Enkele relevante functionaliteiten voor een inwonerspanel worden hieronder toegelicht.',
     [sales.featuresShowcase]: seq([
-      url('https://argu.localdev/info#notification'),
-      url('https://argu.localdev/info#filtration'),
-      url('https://argu.localdev/info#bullhorn'),
-      url('https://argu.localdev/info#checklist'),
-      url('https://argu.localdev/info#scenario-discussion'),
+      url('https://argu.co/info#notification'),
+      url('https://argu.co/info#filtration'),
+      url('https://argu.co/info#bullhorn'),
+      url('https://argu.co/info#checklist'),
+      url('https://argu.co/info#scenario-discussion'),
     ]),
-    [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+    [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: seq([
-        url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
+        url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
       ]),
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/forum",
+  "@id": "https://argu.co/info/forum",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'Forum',
@@ -1452,11 +1452,11 @@ const commonProductProps = {
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot idee generatie: Argu is flexibel inzetbaar voor diverse participatietrajecten zoals het inzetten van een forum',
     [sales.caseShowcase]: seq([
-      url('https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
-      url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
-      url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+      url('https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
+      url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+      url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
     ]),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -1466,27 +1466,27 @@ const commonProductProps = {
     [schema.name]: 'Functionaliteiten',
     [schema.text]: 'Argu is het meest complete pakket om inwoners te laten participeren bij beleid en nauw contact te onderhouden. Breng mensen met elkaar in contact via een forum, krijg inzicht in draagvlak en maak betere beslissingen. Enkele relevante functionaliteiten voor een forum worden hieronder toegelicht.',
     [sales.featuresShowcase]: seq([
-      url('https://argu.localdev/info#notification'),
-      url('https://argu.localdev/info#filtration'),
-      url('https://argu.localdev/info#bullhorn'),
-      url('https://argu.localdev/info#checklist'),
-      url('https://argu.localdev/info#scenario-discussion'),
-      url('https://argu.localdev/info#lock'),
+      url('https://argu.co/info#notification'),
+      url('https://argu.co/info#filtration'),
+      url('https://argu.co/info#bullhorn'),
+      url('https://argu.co/info#checklist'),
+      url('https://argu.co/info#scenario-discussion'),
+      url('https://argu.co/info#lock'),
     ]),
-    [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+    [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: seq([
-        url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
+        url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
       ]),
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 {
-  "@id": "https://argu.localdev/info/e-democracy",
+  "@id": "https://argu.co/info/e-democracy",
   ...commonProductProps,
   [rdfx.type]: sales.ProductPage,
   [schema.name]: 'E-democracy',
@@ -1553,11 +1553,11 @@ const commonProductProps = {
     [schema.name]: 'Vergelijkbare cases',
     [schema.text]: 'Van draagvlakmeting tot idee generatie: Argu is flexibel inzetbaar voor diverse participatietrajecten.',
     [sales.caseShowcase]: seq([
-      url('https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
-      url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
-      url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+      url('https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
+      url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+      url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
     ]),
-    [sales.caseButtonLink]: url('https://argu.localdev/info/cases'),
+    [sales.caseButtonLink]: url('https://argu.co/info/cases'),
     [sales.caseButtonText]: 'Meer cases',
   },
   [sales.features]: {
@@ -1567,30 +1567,30 @@ const commonProductProps = {
     [schema.name]: 'Functionaliteiten',
     [schema.text]: 'Argu is het meest complete e-democracy pakket om inwoners te laten participeren bij beleid en nauw contact te onderhouden. Breng mensen met elkaar in contact via een forum, krijg inzicht in draagvlak en maak betere beslissingen. Enkele relevante e-democracy functionaliteiten worden hieronder toegelicht.',
     [sales.featuresShowcase]: seq([
-      url('https://argu.localdev/info#vote'),
-      url('https://argu.localdev/info#filtration'),
-      url('https://argu.localdev/info#flag'),
-      url('https://argu.localdev/info#infographic'),
-      url('https://argu.localdev/info#checklist'),
-      url('https://argu.localdev/info#budgetting'),
+      url('https://argu.co/info#vote'),
+      url('https://argu.co/info#filtration'),
+      url('https://argu.co/info#flag'),
+      url('https://argu.co/info#infographic'),
+      url('https://argu.co/info#checklist'),
+      url('https://argu.co/info#budgetting'),
     ]),
-    [sales.buttonLink]: url("https://argu.localdev/info/functionaliteiten"),
+    [sales.buttonLink]: url("https://argu.co/info/functionaliteiten"),
     [sales.buttonText]: 'Alle functionaliteiten',
     [sales.blogs]: {
       [rdfx.type]: sales.Blogs,
       [schema.name]: 'Relevante blogs',
       [sales.blogShowcase]: seq([
-        url('https://argu.localdev/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie'),
+        url('https://argu.co/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie'),
       ]),
     },
-    [sales.moreInformationBlock]: url('https://argu.localdev/info#moreInformation'),
+    [sales.moreInformationBlock]: url('https://argu.co/info#moreInformation'),
   },
 },
 
 /***************** PROCESS PAGE *****************/
 
 {
-  "@id": "https://argu.localdev/info/werkwijze",
+  "@id": "https://argu.co/info/werkwijze",
   [rdfx.type]: sales.ProcessPage,
   [schema.name]: 'Werkwijze participatiewebsite',
   [sales.header]: {
@@ -1600,7 +1600,7 @@ const commonProductProps = {
     ...commonHeaderBGProps,
   },
   [schema.description]: 'Onze ervaring heeft tot een gefaseerde werkwijze geleid waarmee wij zorgen dat jij het meeste rendement haalt uit jouw participatietraject. Start vandaag nog!',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [schema.image]: {
     [rdfx.type]: ontola.ns('PictureSet'),
     [ontola.ns('format/avif')]: asset('/sales/images/processpage_one.avif'),
@@ -1619,7 +1619,7 @@ const commonProductProps = {
     [ontola.ns('format/png')]: asset('/sales/images/processpage_three.png'),
     [ontola.ns('format/webp')]: asset('/sales/images/processpage_three.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
   [sales.textTitle]: 'Het Argu proces: van uitdaging naar beslissing',
   [sales.textBlock]: 'Argu is ontworpen om het gehele proces van besluitvorming transparanter, overzichtelijker en interactief te maken. Onze ervaring heeft tot een gefaseerde werkwijze geleid waarmee wij zorgen dat jij het meeste rendement haalt uit jouw participatietraject.',
   [sales.stepper]: {
@@ -1672,7 +1672,7 @@ const commonProductProps = {
           {
             [rdfx.type]: elements.A,
             [argu.trackingId]: 'process-page-academy-link',
-            [ontola.href]: url('https://argu.localdev/academy'),
+            [ontola.href]: url('https://argu.co/academy'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
@@ -1693,18 +1693,18 @@ const commonProductProps = {
 /***************** ABOUT PAGE *****************/
 
 {
-  "@id": 'https://argu.localdev/info/over-ons',
+  "@id": 'https://argu.co/info/over-ons',
   [rdfx.type]: sales.AboutPage,
   [schema.name]: 'Over ons - Argu',
   [schema.description]: 'Argu is gestart met een simpele missie: het internet gebruiken om mensen te betrekken bij besluitvorming.  Benieuwd naar ons team?',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [sales.header]: {
     [rdfx.type]: sales.Header,
     [schema.name]: 'Beslis samen beter',
     [schema.text]: 'Dat is waar Argu voor staat.',
     ...commonHeaderBGProps,
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
   [sales.sections]: seq([
     {
       [rdfx.type]: elements.Document,
@@ -1949,10 +1949,10 @@ const commonProductProps = {
 /***************** FACET PAGE *****************/
 
 {
-  "@id": "https://argu.localdev/info/functionaliteiten",
+  "@id": "https://argu.co/info/functionaliteiten",
   [rdfx.type]: sales.FacetPage,
   [schema.name]: 'Functionaliteiten van Argu',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [schema.description]: 'Met de functionaliteiten van Argu start je eenvoudig een krachtig participatieplatform waarmee je inwoners kan betrekken bij veranderingen.',
   [schema.image]: {
     [rdfx.type]: ontola.ns('PictureSet'),
@@ -1968,13 +1968,13 @@ const commonProductProps = {
     ...commonHeaderBGProps,
   },
   [schema.color]: '#FBFBFB',
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
   [sales.textTitle]: 'Het Argu proces: Van uitdaging naar beslissing',
   [sales.textBlock]: 'Argu is ontworpen om het gehele proces van besluitvorming transparanter, overzichtelijker en interactief te maken. Onze ervaring heeft tot een gefaseerde werkwijze geleid waarmee wij zorgen dat jij het meeste rendement haalt uit jouw participatietraject.',
   [sales.ns('moreTitle')]: 'En wat kost dat?',
   [sales.ns('moreDescription')]: 'Bekijk onze ',
   [sales.ns('morePageName')]: 'tarieven',
-  [sales.ns('morePageLink')]: url('https://argu.localdev/info/prijzen'),
+  [sales.ns('morePageLink')]: url('https://argu.co/info/prijzen'),
   [sales.facets]: {
     [rdfx.type]: rdfx.Seq,
     [rdfx.ns('_01')]: {
@@ -2174,11 +2174,11 @@ const commonProductProps = {
 /***************** CONTACT *****************/
 
 {
-  '@id': 'https://argu.localdev/info/contact',
+  '@id': 'https://argu.co/info/contact',
   [rdfx.type]: sales.ns('ContactPage'),
   [schema.name]: 'Contact - Argu',
   [schema.description]: 'Meer weten over de kracht van een participatieplatform? Kom met ons in contact of plan een demo met een van onze participatie adviseurs.',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [sales.header]: {
     [rdfx.type]: sales.Header,
     [schema.name]: 'Contact',
@@ -2195,7 +2195,7 @@ const commonProductProps = {
   [sales.ns('discordLink')]: 'https://discord.gg/zMxyYNN',
   [sales.ns('discordText')]: 'Chat met ons',
   [sales.ns('website')]: 'Website',
-  [sales.ns('websiteUrl')]: 'https://argu.localdev',
+  [sales.ns('websiteUrl')]: 'https://argu.co',
 
   [argu.socials]: seq([
     {
@@ -2245,18 +2245,18 @@ const commonProductProps = {
 /***************** PRICING *****************/
 
 {
-  '@id': 'https://argu.localdev/info/prijzen',
+  '@id': 'https://argu.co/info/prijzen',
   [rdfx.type]: sales.ns('PricingPage'),
   [schema.name]: 'Prijs - Argu',
   [schema.description]: 'Van burgerparticipatie tot community. Wij werken met vaste tarieven. Zo weet jij wat je kan verwachten van het begin tot de eindevaluatie.',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [sales.header]: {
     [rdfx.type]: sales.Header,
     [schema.name]: 'Onze prijzen',
     // [schema.text]: 'Precies weten waar je aan toe bent. Wij werken met vaste tarieven.',
     ...commonHeaderBGProps,
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
   [sales.ns('tiers')]: {
     [rdfx.type]: rdfx.Seq,
     [rdfx.ns('_0')]: {
@@ -2280,7 +2280,7 @@ const commonProductProps = {
                 },
                 {
                   [rdfx.type]: elements.A,
-                  [ontola.href]: url("https://argu.localdev/info/functionaliteiten"),
+                  [ontola.href]: url("https://argu.co/info/functionaliteiten"),
                   [elements.children]: seq([
                     {
                       [rdfx.type]: elements.InnerText,
@@ -2296,7 +2296,7 @@ const commonProductProps = {
         [rdfx.ns('_2')]: 'Onbeperkte persoonlijke begeleiding',
         [rdfx.ns('_3')]: 'Eigen domeinnaam',
       },
-      [sales.buttonLink]: url('https://argu.localdev/info/contact'),
+      [sales.buttonLink]: url('https://argu.co/info/contact'),
     },
     [rdfx.ns('_1')]: {
       [rdfx.type]: sales.ns('Tier'),
@@ -2312,7 +2312,7 @@ const commonProductProps = {
         [rdfx.ns('_2')]: 'Meerdere platforms mogelijk',
         [rdfx.ns('_3')]: 'Begrotingstool',
       },
-      [sales.buttonLink]: url('https://argu.localdev/info/contact'),
+      [sales.buttonLink]: url('https://argu.co/info/contact'),
     },
     [rdfx.ns('_2')]: {
       [rdfx.type]: sales.ns('Tier'),
@@ -2320,7 +2320,7 @@ const commonProductProps = {
       [schema.text]: 'Wil je enkele aanpassingen? Geen probleem! Wij houden ervan om nieuwe functionaliteiten te ontwikkelen. Lees meer over onze maatwerk oplossingen.',
       [sales.tagline]: 'Alles van Standaard is inbegrepen.',
       [sales.ns('priceUnit')]: 'Op aanvraag',
-      [sales.buttonLink]: url('https://argu.localdev/info/contact'),
+      [sales.buttonLink]: url('https://argu.co/info/contact'),
     },
   },
   [argu.lowerSection]: {
@@ -2340,7 +2340,7 @@ const commonProductProps = {
         [elements.children]: seq([
           {
             [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.localdev/info/contact'),
+            [ontola.href]: url('https://argu.co/info/contact'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
@@ -2372,7 +2372,7 @@ const commonProductProps = {
           },
           {
             [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.localdev/info/contact'),
+            [ontola.href]: url('https://argu.co/info/contact'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
@@ -2393,7 +2393,7 @@ const commonProductProps = {
 /***************** CASES *****************/
 
 {
-  '@id': 'https://argu.localdev/info/cases',
+  '@id': 'https://argu.co/info/cases',
   [rdfx.type]: sales.ns('CasesPage'),
   [schema.name]: 'Voorbeelden online participatie',
   [sales.header]: {
@@ -2402,7 +2402,7 @@ const commonProductProps = {
     ...commonHeaderBGProps,
   },
   [schema.description]: 'Benieuwd naar de verhalen van andere gemeenten en organisaties? Laat onze klantcases je inspireren. Voor meer informatie kan je altijd contact opnemen!',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [schema.image]: {
     [rdfx.type]: ontola.ns('PictureSet'),
     [ontola.ariaLabel]: "Klantlogos - Heerugowaard, Den Haag, Hollands Kroon, GroenLinks, RIVM, Rochdale, Gemeente Utrecht, CvTE, KVK, Drechtsteden, Vroonermeer noord, Heerenveen",
@@ -2413,17 +2413,17 @@ const commonProductProps = {
   },
   [schema.text]: 'Enkele van onze klanten',
   [as.items]: seq([
-    url('https://argu.localdev/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie'),
-    url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
-    url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
-    url('https://argu.localdev/info/cases/online-huurdersparticipatie-bij-thuisvester'),
-    url('https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
+    url('https://argu.co/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie'),
+    url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+    url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+    url('https://argu.co/info/cases/online-huurdersparticipatie-bij-thuisvester'),
+    url('https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein'),
   ]),
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 
 {
-  '@id': 'https://argu.localdev/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie',
+  '@id': 'https://argu.co/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie',
   [rdfx.type]: sales.CasePage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2445,8 +2445,8 @@ const commonProductProps = {
   [sales.theme]: 'Energietransitie',
   [schema.description]: 'We gaan in Nederland over op duurzame energiebronnen. De aanleiding voor deze grootschalige transitie is iedereen bekend. De aarde warmt op met alle negatieve gevolgen voor ons klimaat. Dat proces willen we stoppen, zodat we een gezonde aarde kunnen doorgeven aan de generaties na ons. Gedreven door deze urgentie voelen de Drechtsteden (Dordrecht, Sliedrecht, Zwijndrecht, Alblasserdam, Hardinxveld-Giessendam en Hendrik-Ido-Ambacht) de noodzaak om met elkaar de schouders eronder te zetten.',
   [sales.tagline]: " De aarde warmt op met alle negatieve gevolgen voor ons klimaat. Dat proces willen we stoppen.",
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
-  [schema.text]: url('https://argu.localdev/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie#content'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
+  [schema.text]: url('https://argu.co/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie#content'),
   [schema.member]: {
     [schema.name]: 'Joep Meindertsma',
     [schema.telephone]: '+316 360 20 942',
@@ -2461,7 +2461,7 @@ const commonProductProps = {
   }
 },
 {
-  '@id': 'https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens',
+  '@id': 'https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens',
   [rdfx.type]: sales.CasePage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2483,8 +2483,8 @@ const commonProductProps = {
   [sales.theme]: 'Community',
   [schema.description]: 'Het College voor Toetsen en Examens (CvTE) zorgt voor de uitvoering van de centrale examens. De coronacrisis zorgt voor enkele uitdagingen bij de organisatie en inrichting van deze examens. Om met docenten in contact te komen en docenten onderling van gedachte te laten wisselen heeft het CvTE Denkmee.cvte.nl gelanceerd. Dit is een discussieplatform waar je als docent en/of examensecretaris onder meer ideeën kan uitwisselen over de uitvoering van de centrale examens tijdens de coronacrisis.',
   [sales.tagline]: "Het College voor Toetsen en Examens (CvTE) zorgt voor de uitvoering van de centrale examens. De coronacrisis zorgt voor enkele uitdagingen bij de organisatie en inrichting van deze examens.",
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
-  [schema.text]: url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens#content'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
+  [schema.text]: url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens#content'),
   [schema.member]: {
     [rdfx.type]: schema.Person,
     [schema.name]: 'Marcel',
@@ -2500,7 +2500,7 @@ const commonProductProps = {
   }
 },
 {
-  '@id': 'https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard',
+  '@id': 'https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard',
   [rdfx.type]: sales.CasePage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2522,8 +2522,8 @@ const commonProductProps = {
   [sales.theme]: 'Participatiewebsite',
   [schema.description]: 'De Gemeente Heerhugowaard werkt aan een gebiedsvisie voor Centrumwaard. De maanden voorafgaand aan het discussieplatform hebben alle inwoners, ondernemers en organisaties uit Centrumwaard mee kunnen doen in het proces om tot een gebiedsvisie te komen. De opbrengsten hebben geleid tot een aantal "richtinggevende uitspraken"',
   [sales.tagline]: "De Gemeente Heerhugowaard werkt aan een gebiedsvisie voor Centrumwaard.",
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
-  [schema.text]: url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard#content'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
+  [schema.text]: url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard#content'),
   [schema.member]: {
     [rdfx.type]: schema.Person,
     [schema.name]: 'Marcel',
@@ -2539,7 +2539,7 @@ const commonProductProps = {
   },
 },
 {
-  '@id': 'https://argu.localdev/info/cases/online-huurdersparticipatie-bij-thuisvester',
+  '@id': 'https://argu.co/info/cases/online-huurdersparticipatie-bij-thuisvester',
   [rdfx.type]: sales.CasePage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2561,8 +2561,8 @@ const commonProductProps = {
   [sales.theme]: 'Huurdersparticipatie',
   [schema.description]: 'In september 2018 vroeg woningcorporatie Thuisvester haar huurders om initiatieven te bedenken in de wijk. De corporatie stelde namelijk een budget beschikbaar voor ondersteuning van initiatieven in de wijk. In plaats van dit via de traditionele communicatiemiddelen (bijvoorbeeld krant, folders) te doen, is er gekozen voor online participatie, om zo een bredere groep te betrekken en het besluitvormingsproces transparant te maken.',
   [sales.tagline]: "In september 2018 vroeg woningcorporatie Thuisvester haar huurders om initiatieven te bedenken in de wijk.",
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
-  [schema.text]: url('https://argu.localdev/info/cases/online-huurdersparticipatie-bij-thuisvester#content'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
+  [schema.text]: url('https://argu.co/info/cases/online-huurdersparticipatie-bij-thuisvester#content'),
   [schema.member]: {
     [schema.name]: 'Michiel',
     [schema.telephone]: '+316 360 20 942',
@@ -2577,7 +2577,7 @@ const commonProductProps = {
   }
 },
 {
-  '@id': 'https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein',
+  '@id': 'https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein',
   [rdfx.type]: sales.CasePage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2599,8 +2599,8 @@ const commonProductProps = {
   [sales.theme]: 'Participatiewebsite',
   [schema.description]: 'Met het nieuwe afvalbeleid van de gemeente IJsselstein wordt er een overstap gemaakt naar ‘dynamisch inzamelen’. Dit betekent o.a. dat bewoners gebruik gaan maken van ondergrondse containers voor hun restafval. De gemeente IJsselstein wilde inwoners de mogelijkheid bieden te reageren op het concept locatieplan.',
   [sales.tagline]: "Met het nieuwe afvalbeleid van de gemeente IJsselstein wordt er een overstap gemaakt naar ‘dynamisch inzamelen’. ",
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
-  [schema.text]: url('https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein#content'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
+  [schema.text]: url('https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein#content'),
   [schema.member]: {
     [rdfx.type]: schema.Person,
     [schema.name]: 'Marcel',
@@ -2618,7 +2618,7 @@ const commonProductProps = {
 /***************** FOOTER *****************/
 
 {
-  '@id': 'https://argu.localdev/info/menus/footer',
+  '@id': 'https://argu.co/info/menus/footer',
   [rdfx.type]: argu.ns('Footer'),
   [argu.ns('columns')]: seq([
     {
@@ -2628,27 +2628,27 @@ const commonProductProps = {
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Functionaliteiten',
-          [ontola.href]: url('https://argu.localdev/info/functionaliteiten'),
+          [ontola.href]: url('https://argu.co/info/functionaliteiten'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Prijs',
-          [ontola.href]: url('https://argu.localdev/info/prijzen'),
+          [ontola.href]: url('https://argu.co/info/prijzen'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Werkwijze',
-          [ontola.href]: url('https://argu.localdev/info/werkwijze'),
+          [ontola.href]: url('https://argu.co/info/werkwijze'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Over ons',
-          [ontola.href]: url('https://argu.localdev/info/over-ons'),
+          [ontola.href]: url('https://argu.co/info/over-ons'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Contact',
-          [ontola.href]: url('https://argu.localdev/info/contact'),
+          [ontola.href]: url('https://argu.co/info/contact'),
         },
       ]),
     },
@@ -2659,22 +2659,22 @@ const commonProductProps = {
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Cases',
-          [ontola.href]: url('https://argu.localdev/info/cases'),
+          [ontola.href]: url('https://argu.co/info/cases'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Academy',
-          [ontola.href]: url('https://argu.localdev/academy'),
+          [ontola.href]: url('https://argu.co/academy'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Meer blogs',
-          [ontola.href]: url('https://argu.localdev/argu/blog'),
+          [ontola.href]: url('https://argu.co/argu/blog'),
         },
         {
           [rdfx.type]: ontola.MenuItem,
           [schema.name]: 'Helpdesk',
-          [ontola.href]: url('https://argu.localdev/argu/help'),
+          [ontola.href]: url('https://argu.co/argu/help'),
         },
       ]),
     },
@@ -2715,8 +2715,8 @@ const commonProductProps = {
   [argu.lowerSection]: {
     [rdfx.type]: argu.LowerSecion,
     [schema.image]: asset("/sales/images/argu-logo.svg"),
-    [argu.policy]: url('https://argu.localdev/argu/policy'),
-    [argu.privacy]: url('https://argu.localdev/argu/privacy'),
+    [argu.policy]: url('https://argu.co/argu/policy'),
+    [argu.privacy]: url('https://argu.co/argu/privacy'),
     [argu.socials]: seq([
       {
         [rdfx.type]: argu.SocialButton,
@@ -2743,44 +2743,44 @@ const commonProductProps = {
 /***************** BLOG PAGE *************/
 
 {
-  '@id': 'https://argu.localdev/info/blog',
+  '@id': 'https://argu.co/info/blog',
   [rdfx.type]: sales.Blogs,
   [schema.name]: 'Blijf op de hoogte met onze blogs',
   [schema.description]: 'Wij houden jou op de hoogte van ontwikkelingen rondom burgerparticipatie en andere vormen van participatie.',
-  [ontola.coverPhoto]: url('https://argu.localdev/info#CoverImage'),
+  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
   [sales.header]: {
     [rdfx.type]: sales.Header,
     [schema.name]: 'Blog',
     ...commonHeaderBGProps,
   },
   [sales.blogs]: seq([
-    url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie'),
-    url('https://argu.localdev/info/blogs/5-checks-voordat-je-aan-e-participatie-begint'),
-    url('https://argu.localdev/info/blogs/argu-lanceert-openBesluitvorming'),
-    url('https://argu.localdev/info/blogs/waarom-een-wijkbudget'),
-    url('https://argu.localdev/info/blogs/wat-kost-e-participatie'),
-    url('https://argu.localdev/info/blogs/online-huurdersparticipatie-is-de-toekomst'),
-    url('https://argu.localdev/info/blogs/verwachtingsmanagement-bij-participatie'),
-    url('https://argu.localdev/info/blogs/participatieladder-bij-online-participatie'),
-    url('https://argu.localdev/info/blogs/online-participatie-biedt-een-betere-dynamiek'),
-    url('https://argu.localdev/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente'),
-    url('https://argu.localdev/info/blogs/de-vloeken-van-burgerparticipatie'),
-    url('https://argu.localdev/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie'),
+    url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie'),
+    url('https://argu.co/info/blogs/5-checks-voordat-je-aan-e-participatie-begint'),
+    url('https://argu.co/info/blogs/argu-lanceert-openBesluitvorming'),
+    url('https://argu.co/info/blogs/waarom-een-wijkbudget'),
+    url('https://argu.co/info/blogs/wat-kost-e-participatie'),
+    url('https://argu.co/info/blogs/online-huurdersparticipatie-is-de-toekomst'),
+    url('https://argu.co/info/blogs/verwachtingsmanagement-bij-participatie'),
+    url('https://argu.co/info/blogs/participatieladder-bij-online-participatie'),
+    url('https://argu.co/info/blogs/online-participatie-biedt-een-betere-dynamiek'),
+    url('https://argu.co/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente'),
+    url('https://argu.co/info/blogs/de-vloeken-van-burgerparticipatie'),
+    url('https://argu.co/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie'),
   ]),
   [schema.text]: 'Hoe wil jij Argu inzetten?',
   [sales.showcase]: {
     [rdfx.type]: rdfx.Seq,
-    [rdfx.ns('_01')]: url("https://argu.localdev/info/participatie"),
-    [rdfx.ns('_02')]: url("https://argu.localdev/info/huurdersparticipatie"),
-    [rdfx.ns('_03')]: url("https://argu.localdev/info/community"),
-    [rdfx.ns('_04')]: url("https://argu.localdev/info/energietransitie"),
+    [rdfx.ns('_01')]: url("https://argu.co/info/participatie"),
+    [rdfx.ns('_02')]: url("https://argu.co/info/huurdersparticipatie"),
+    [rdfx.ns('_03')]: url("https://argu.co/info/community"),
+    [rdfx.ns('_04')]: url("https://argu.co/info/energietransitie"),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 
 /***************** BLOGS *****************/
 {
-  '@id': 'https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie',
+  '@id': 'https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2801,7 +2801,7 @@ const commonProductProps = {
   [schema.name]: 'Hoe toegankelijk is online participatie?',
   [sales.theme]: "Participatie",
   [schema.description]: 'In de afgelopen jaren heb ik als participatieadviseur bij Argu in gesprekken over online participatie vaak kritische vragen gekregen over de toegankelijkheid van een online platform. Steeds meer participatietrajecten worden online gefaciliteerd. Gemeenten en andere organisaties zien de voordelen van online tools om meer mensen en een diversere groep mensen te betrekken dan via de traditionele inspraakavond. Maar wat betekent dat voor mensen die geen goede digitale vaardigheden hebben? En is een online platform ook bruikbaar voor mensen met een visuele beperking? Kortom: hoe toegankelijk is online participatie?',
-  [schema.text]: url('https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs1.jpg'),
@@ -2813,10 +2813,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs1.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs1.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/5-checks-voordat-je-aan-e-participatie-begint',
+  '@id': 'https://argu.co/info/blogs/5-checks-voordat-je-aan-e-participatie-begint',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2837,7 +2837,7 @@ const commonProductProps = {
   [schema.name]: '5 checks voordat je aan e-participatie begint',
   [sales.theme]: "Participatie",
   [schema.description]: 'Participatietrajecten worden vaak geïnitieerd vanuit een plicht. Overheden moeten inwoners bijvoorbeeld betrekken bij veranderingen in de fysieke omgeving. Maar bedenk dat "mensen betrekken" een behoorlijk vaag doel is.',
-  [schema.text]: url('https://argu.localdev/info/blogs/5-checks-voordat-je-aan-e-participatie-begint#content'),
+  [schema.text]: url('https://argu.co/info/blogs/5-checks-voordat-je-aan-e-participatie-begint#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs2.jpg'),
@@ -2849,10 +2849,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs2.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs2.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/argu-lanceert-openBesluitvorming',
+  '@id': 'https://argu.co/info/blogs/argu-lanceert-openBesluitvorming',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2873,7 +2873,7 @@ const commonProductProps = {
   [schema.name]: 'Argu lanceert OpenBesluitvorming.nl',
   [sales.theme]: "Overig",
   [schema.description]: 'Argu lanceert OpenBesluitvorming.nl; een web app waarmee door vergaderstukken van meer dan 120 gemeenten en provincies kan worden gezocht.',
-  [schema.text]: url('https://argu.localdev/info/blogs/argu-lanceert-openBesluitvorming#content'),
+  [schema.text]: url('https://argu.co/info/blogs/argu-lanceert-openBesluitvorming#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs3.jpg'),
@@ -2885,10 +2885,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs3.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs3.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/waarom-een-wijkbudget',
+  '@id': 'https://argu.co/info/blogs/waarom-een-wijkbudget',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2909,7 +2909,7 @@ const commonProductProps = {
   [schema.name]: 'Waarom een wijkbudget?',
   [sales.theme]: "Participatie",
   [schema.description]: 'In de afgelopen jaren hebben een aantal Nederlandse gemeenten geëxperimenteerd met online platforms waarmee inwoners een budget kunnen verdelen over initiatieven van medebewoners in de wijk. In dit artikel zet ik uiteen waarom je als gemeente of woningcorporatie gebruik zou willen maken van een wijkbudget.',
-  [schema.text]: url('https://argu.localdev/info/blogs/waarom-een-wijkbudget#content'),
+  [schema.text]: url('https://argu.co/info/blogs/waarom-een-wijkbudget#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs4.jpg'),
@@ -2921,10 +2921,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs4.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs4.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/wat-kost-e-participatie',
+  '@id': 'https://argu.co/info/blogs/wat-kost-e-participatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2945,7 +2945,7 @@ const commonProductProps = {
   [schema.name]: 'Wat kost e-participatie?',
   [sales.theme]: "Participatie",
   [schema.description]: 'E-participatie is het betrekken van inwoners bij beleid en veranderingen in de leefomgeving door middel van online instrumenten. Naast de bekende online enquêtes zijn er de afgelopen jaren ook participatieplatforms ontwikkeld die specifieke tools aanbieden om burgerparticipatie laagdrempelig en effectief te maken. Een logische vraag is dan ook “wat kost dat?”.',
-  [schema.text]: url('https://argu.localdev/info/blogs/wat-kost-e-participatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/wat-kost-e-participatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs5.jpg'),
@@ -2957,10 +2957,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs5.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs5.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/online-huurdersparticipatie-is-de-toekomst',
+  '@id': 'https://argu.co/info/blogs/online-huurdersparticipatie-is-de-toekomst',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -2981,7 +2981,7 @@ const commonProductProps = {
   [schema.name]: 'Online huurdersparticipatie is de toekomst',
   [sales.theme]: "Huurdersparticipatie",
   [schema.description]: 'In de afgelopen jaren heeft Argu veel woningcorporaties geholpen met het betrekken van huurders bij beleid. In dit artikel noem ik de meest herkenbare uitdagingen op het gebied van huurdersparticipatie en hoe online participatie daar oplossingen voor kan bieden.',
-  [schema.text]: url('https://argu.localdev/info/blogs/online-huurdersparticipatie-is-de-toekomst#content'),
+  [schema.text]: url('https://argu.co/info/blogs/online-huurdersparticipatie-is-de-toekomst#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs6.jpg'),
@@ -2993,10 +2993,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs6.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs6.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/verwachtingsmanagement-bij-participatie',
+  '@id': 'https://argu.co/info/blogs/verwachtingsmanagement-bij-participatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3017,7 +3017,7 @@ const commonProductProps = {
   [schema.name]: 'Verwachtingsmanagement bij participatie',
   [sales.theme]: "Participatie",
   [schema.description]: 'Iedereen die weleens een participatietraject heeft georganiseerd kent het woord ‘verwachtingsmanagement’. Dit begrip gaat over het zorgvuldig formuleren van teksten om te voorkomen dat inwoners bepaalde informatie verkeerd begrijpen. Het belangrijkste doel van verwachtingsmanagement is het voorkomen van wantrouwen, bezwaarprocedures en rechtszaken. Maar welke verwachtingen hebben mensen eigenlijk bij participatietrajecten? En kun je die wel managen?',
-  [schema.text]: url('https://argu.localdev/info/blogs/verwachtingsmanagement-bij-participatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/verwachtingsmanagement-bij-participatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs7.jpg'),
@@ -3029,10 +3029,10 @@ const commonProductProps = {
     [ontola.ns('format/jpg')]: asset('/sales/images/blogs7.jpg'),
     [ontola.ns('format/webp')]: asset('/sales/images/blogs7.webp'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/participatieladder-bij-online-participatie',
+  '@id': 'https://argu.co/info/blogs/participatieladder-bij-online-participatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3053,7 +3053,7 @@ const commonProductProps = {
   [schema.name]: 'Participatieladder bij online participatie',
   [sales.theme]: "Participatie",
   [schema.description]: 'Gemeenten en andere overheden starten ieder jaar meerdere participatietrajecten. Met een participatietraject probeer je een doelgroep te betrekken bij het vormen van beleid. Je kunt daarbij bepalen hoeveel invloed die doelgroep kan uitoefenen op het uiteindelijke besluit. Maar hoe bepaal je dit? ',
-  [schema.text]: url('https://argu.localdev/info/blogs/participatieladder-bij-online-participatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/participatieladder-bij-online-participatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs8.jpg'),
@@ -3065,10 +3065,10 @@ const commonProductProps = {
     [ontola.ns('format/webp')]: asset('/sales/images/blogs8.webp'),
     [ontola.ns('format/avif')]: asset('/sales/images/blogs8.avif'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/online-participatie-biedt-een-betere-dynamiek',
+  '@id': 'https://argu.co/info/blogs/online-participatie-biedt-een-betere-dynamiek',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3089,7 +3089,7 @@ const commonProductProps = {
   [schema.name]: 'Online participatie biedt een betere dynamiek',
   [sales.theme]: "Participatie",
   [schema.description]: 'Mocht je weleens een inspraakavond hebben bezocht dan is het je vast wel opgevallen hoe de deelnemers van elkaar verschillen. Sommige mensen zitten aandachtig te luisteren maar komen nooit aan het woord. Andere mensen schromen niet om hun hand op te steken als ze iets willen zeggen - of erger - onderbreken de spreker om hun mening te verkondigen. Hierdoor werkt het participatieproces niet optimaal. Wie hard roept krijgt aandacht maar wie nadenkt voordat hij zich uitspreekt komt niet of nauwelijks aan het woord.',
-  [schema.text]: url('https://argu.localdev/info/blogs/online-participatie-biedt-een-betere-dynamiek#content'),
+  [schema.text]: url('https://argu.co/info/blogs/online-participatie-biedt-een-betere-dynamiek#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs9.jpg'),
@@ -3101,10 +3101,10 @@ const commonProductProps = {
     [ontola.ns('format/webp')]: asset('/sales/images/blogs9.webp'),
     [ontola.ns('format/avif')]: asset('/sales/images/blogs9.avif'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente',
+  '@id': 'https://argu.co/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3125,7 +3125,7 @@ const commonProductProps = {
   [schema.name]: 'Een succesvol participatietraject, hoe doe je dat als gemeente?',
   [sales.theme]: "Participatie",
   [schema.description]: 'Veel gemeenten organiseren jaarlijks meerdere participatietrajecten. Maar hoe laat je zo’n traject nou slagen? In de afgelopen jaren heb ik als participatieadviseur meer dan 150 trajecten begeleid. In dit artikel deel ik mijn ervaringen en de inzichten van de communicatieadviseurs, beleidsadviseurs en projectleiders waar ik mee heb samengewerkt.',
-  [schema.text]: url('https://argu.localdev/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente#content'),
+  [schema.text]: url('https://argu.co/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs10.jpg'),
@@ -3137,10 +3137,10 @@ const commonProductProps = {
     [ontola.ns('format/webp')]: asset('/sales/images/blogs10.webp'),
     [ontola.ns('format/avif')]: asset('/sales/images/blogs10.avif'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/de-vloeken-van-burgerparticipatie',
+  '@id': 'https://argu.co/info/blogs/de-vloeken-van-burgerparticipatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3161,7 +3161,7 @@ const commonProductProps = {
   [schema.name]: 'De vloeken van burgerparticipatie',
   [sales.theme]: "Participatie",
   [schema.description]: 'Als je als projectleider wordt aangesteld voor een participatietraject maak je een goed plan voor de komende tijd. Waarschijnlijk begin je met een stakeholderanalyse en een inventarisatie van de middelen die je kunt inzetten om mensen te betrekken. Het is best een tijdsinvestering om dit voor te bereiden. En daarmee ben je er helaas nog niet! Voordat je begint liggen er al beren op de weg. Er berusten namelijk een aantal vloeken op ieder participatietraject. Maar wees gerust, in dit artikel lees je hoe je hiermee om kunt gaan.',
-  [schema.text]: url('https://argu.localdev/info/blogs/de-vloeken-van-burgerparticipatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/de-vloeken-van-burgerparticipatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs11.jpg'),
@@ -3173,10 +3173,10 @@ const commonProductProps = {
     [ontola.ns('format/webp')]: asset('/sales/images/blogs11.webp'),
     [ontola.ns('format/avif')]: asset('/sales/images/blogs11.avif'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 {
-  '@id': 'https://argu.localdev/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie',
+  '@id': 'https://argu.co/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie',
   [rdfx.type]: sales.BlogPage,
   [sales.header]: {
     [rdfx.type]: sales.Header,
@@ -3197,7 +3197,7 @@ const commonProductProps = {
   [schema.name]: '3 succesvolle strategieën om te starten met e-participatie',
   [sales.theme]: "Participatie",
   [schema.description]: 'Veel organisaties willen starten met online participatie. De voordelen zijn inmiddels bekend: het is laagdrempeliger voor mensen om deel te nemen, je bereikt meer mensen, kunt eenvoudiger input verzamelen en resultaten terugkoppelen is een fluitje van een cent. Maar hoe begin je?',
-  [schema.text]: url('https://argu.localdev/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie#content'),
+  [schema.text]: url('https://argu.co/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie#content'),
   [ontola.coverPhoto]: {
     [rdfx.type]: schema.ImageObject,
     [ontola.imgUrl1500x2000]: asset('/sales/images/blogs12.jpg'),
@@ -3209,13 +3209,13 @@ const commonProductProps = {
     [ontola.ns('format/webp')]: asset('/sales/images/blogs12.webp'),
     [ontola.ns('format/avif')]: asset('/sales/images/blogs12.avif'),
   },
-  [sales.callToActionBlock]: url('https://argu.localdev/info#CTABlock'),
+  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
 },
 
 
 /***************** PARTIALS *****************/
 {
-  '@id': 'https://argu.localdev/info#CTABlock',
+  '@id': 'https://argu.co/info#CTABlock',
   [rdfx.type]: sales.CallToActionBlock,
   [sales.callToActionTitle]: 'Ontdek de kansen voor jouw vraagstuk',
   [sales.callToActionText]: 'Plan een vrijblijvende demo in!',
@@ -3227,7 +3227,7 @@ const commonProductProps = {
   },
 },
 {
-  '@id': 'https://argu.localdev/info#propositions',
+  '@id': 'https://argu.co/info#propositions',
   [rdfx.type]: rdfx.Seq,
   [rdfx.ns('_01')]: {
     [rdfx.type]: sales.Proposition,
@@ -3264,19 +3264,19 @@ const commonProductProps = {
 },
 
 {
-  '@id': 'https://argu.localdev/info#moreInformation',
+  '@id': 'https://argu.co/info#moreInformation',
   [rdfx.type]: sales.MoreInformationBlock,
   [schema.name]: 'Wij staan voor jou klaar',
   [sales.sections]: seq([
     {
       [rdfx.type]: sales.MoreInformationBlockSection,
-      [sales.buttonLink]: url('https://argu.localdev/info/werkwijze'),
+      [sales.buttonLink]: url('https://argu.co/info/werkwijze'),
       [sales.buttonText]: 'Onze werkwijze',
       [schema.text]: 'Samen zorgen voor een succesvol participatietraject.',
     },
     {
       [rdfx.type]: sales.MoreInformationBlockSection,
-      [sales.buttonLink]: url('https://argu.localdev/academy'),
+      [sales.buttonLink]: url('https://argu.co/academy'),
       [sales.buttonText]: 'Onze academy',
       [schema.text]: 'Bordevol handige tips en uitleg waarmee jij aan de slag kan.',
     },
@@ -3284,100 +3284,100 @@ const commonProductProps = {
 },
 
 {
-  '@id': 'https://argu.localdev/info#vote',
+  '@id': 'https://argu.co/info#vote',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/thumbs_up.svg'),
+  [schema.image]: url('https://argu.co/static/icons/thumbs_up.svg'),
   [schema.name]: "Stemmen",
   [schema.text]: 'Via Argu kun je gebruikers laten stemmen op ideeën. Met losse voor- en tegenargumenten blijven discussies overzichtelijk.',
 },
 {
-  '@id': 'https://argu.localdev/info#filtration',
+  '@id': 'https://argu.co/info#filtration',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/filtration.svg'),
+  [schema.image]: url('https://argu.co/static/icons/filtration.svg'),
   [schema.name]: "Ideegeneratie",
   [schema.text]: 'Met onze unieke discussietool kun je ideeën verzamelen en draagvlak meten.',
 },
 {
-  '@id': 'https://argu.localdev/info#tenantFiltration',
+  '@id': 'https://argu.co/info#tenantFiltration',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/filtration.svg'),
+  [schema.image]: url('https://argu.co/static/icons/filtration.svg'),
   [schema.name]: "Ideegeneratie",
   [schema.text]: 'Zet ingewikkelde beleidsvraagstukken om in interessante uitdagingen',
 },
 {
-  '@id': 'https://argu.localdev/info#flag',
+  '@id': 'https://argu.co/info#flag',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/flag.svg'),
+  [schema.image]: url('https://argu.co/static/icons/flag.svg'),
   [schema.name]: "Interactieve Kaarten",
   [schema.text]: 'Laat gebruikers items op de kaart prikken.',
 },
 {
-  '@id': 'https://argu.localdev/info#infographic',
+  '@id': 'https://argu.co/info#infographic',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/infographic.svg'),
+  [schema.image]: url('https://argu.co/static/icons/infographic.svg'),
   [schema.name]: "Traject",
   [schema.text]: 'Met een traject betrek je mensen over een langere periode en ga je gefaseerd te werk.',
 },
 {
-  '@id': 'https://argu.localdev/info#checklist',
+  '@id': 'https://argu.co/info#checklist',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/checklist.svg'),
+  [schema.image]: url('https://argu.co/static/icons/checklist.svg'),
   [schema.name]: "Vragenlijsten",
   [schema.text]: 'Maak een professionele enquête en analyseer de resultaten.',
 },
 {
-  '@id': 'https://argu.localdev/info#photo',
+  '@id': 'https://argu.co/info#photo',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/photo.svg'),
+  [schema.image]: url('https://argu.co/static/icons/photo.svg'),
   [schema.name]: "Eigen huisstijl",
   [schema.text]: 'Het platform is eenvoudig aan te passen naar jouw huisstijl.',
 },
 {
-  '@id': 'https://argu.localdev/info#lock',
+  '@id': 'https://argu.co/info#lock',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/lock.svg'),
+  [schema.image]: url('https://argu.co/static/icons/lock.svg'),
   [schema.name]: "Groepen- en rechtenbeheer",
   [schema.text]: 'Bepaal per item of per forum wie wat mag bekijken, of mag reageren.',
 },
 {
-  '@id': 'https://argu.localdev/info#notification',
+  '@id': 'https://argu.co/info#notification',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/notification.svg'),
+  [schema.image]: url('https://argu.co/static/icons/notification.svg'),
   [schema.name]: 'Meldingen',
   [schema.text]: 'Volg items en ontvang e-mails bij nieuwe berichten. Zo krijg je tot 350% meer interactie.',
 },
 {
-  '@id': 'https://argu.localdev/info#bullhorn',
+  '@id': 'https://argu.co/info#bullhorn',
   [rdfx.type]: sales.Feature,
-  [schema.image]: url('https://argu.localdev/static/icons/bullhorn.svg'),
+  [schema.image]: url('https://argu.co/static/icons/bullhorn.svg'),
   [schema.name]: 'Updates',
   [schema.text]: 'Houd mensen op de hoogte en koppel terug via updates.',
 },
 {
-  '@id': 'https://argu.localdev/info#budgetting',
+  '@id': 'https://argu.co/info#budgetting',
   [rdfx.type]: sales.Feature,
   [schema.image]: asset('/sales/images/icon_budgetting.svg'),
   [schema.name]: 'Budgetten',
   [schema.text]: 'Laat huurders meedenken bij het verdelen van budget. Stel een prijsvraag of laat huurders ideeën indienen.',
 },
 {
-  '@id': 'https://argu.localdev/info#scenario-discussion',
+  '@id': 'https://argu.co/info#scenario-discussion',
   [rdfx.type]: sales.Feature,
   [schema.image]: asset('/sales/images/scenario-discussion.svg'),
   [schema.name]: 'Scenario discussie',
   [schema.text]: 'Laat mensen kiezen uit opties die ieder hun eigen voor- en nadelen hebben.',
 },
 {
-  '@id': 'https://argu.localdev/info#highlightedCases',
+  '@id': 'https://argu.co/info#highlightedCases',
   ...seq([
-    url('https://argu.localdev/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie'),
-    url('https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
-    url('https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
+    url('https://argu.co/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie'),
+    url('https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens'),
+    url('https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard'),
   ]),
 },
 
 {
-  '@id': 'https://argu.localdev/info#CoverImage',
+  '@id': 'https://argu.co/info#CoverImage',
   [rdfx.type]: schema.ImageObject,
   [ontola.imgUrl1500x2000]: asset('/sales/images/argu-cover-photo.jpg'),
 },
@@ -3386,7 +3386,7 @@ const commonProductProps = {
 /******* BLOG CONTENT 1 */
 
 {
-  '@id': 'https://argu.localdev/info/blogs/hoe-toegankelijk-is-online-participatie#content',
+  '@id': 'https://argu.co/info/blogs/hoe-toegankelijk-is-online-participatie#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -3878,7 +3878,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_03>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/argu/t/10484"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/argu/t/10484"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4246,7 +4246,7 @@ const commonProductProps = {
 /** BLOG CONTENT 2 */
 
 {
-  '@id': 'https://argu.localdev/info/blogs/5-checks-voordat-je-aan-e-participatie-begint#content',
+  '@id': 'https://argu.co/info/blogs/5-checks-voordat-je-aan-e-participatie-begint#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -4418,7 +4418,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/argu/posts/11007"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/argu/posts/11007"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4503,7 +4503,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/argu/posts/11023"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/argu/posts/11023"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4544,7 +4544,7 @@ const commonProductProps = {
 /** BLOG CONTENT 3 */
 
 {
-  '@id': 'https://argu.localdev/info/blogs/argu-lanceert-openBesluitvorming#content',
+  '@id': 'https://argu.co/info/blogs/argu-lanceert-openBesluitvorming#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -5193,7 +5193,7 @@ const commonProductProps = {
 
 /** BLOG CONTENT 4 */
 {
-  '@id': 'https://argu.localdev/info/blogs/waarom-een-wijkbudget#content',
+  '@id': 'https://argu.co/info/blogs/waarom-een-wijkbudget#content',
   [rdfx.type]: elements.Document,
   [elements.children]: {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -5354,7 +5354,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/info/contact"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/info/contact"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -5395,7 +5395,7 @@ const commonProductProps = {
 
 /** BLOG CONTENT 5 */
 {
-  '@id': 'https://argu.localdev/info/blogs/wat-kost-e-participatie#content',
+  '@id': 'https://argu.co/info/blogs/wat-kost-e-participatie#content',
   [rdfx.type]: elements.Document,
   [elements.children]: {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -5617,7 +5617,7 @@ const commonProductProps = {
                         },
                         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
                           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-                          "<https://ns.ontola.io/core#href>": url("http://argu.localdev"),
+                          "<https://ns.ontola.io/core#href>": url("http://argu.co"),
                           "<https://ns.ontola.io/elements#children>": {
                             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
                             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -5984,7 +5984,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/info/contact"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/info/contact"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -6004,7 +6004,7 @@ const commonProductProps = {
 
 /** BLOG CONTENT 6 */
 {
-  '@id': 'https://argu.localdev/info/blogs/online-huurdersparticipatie-is-de-toekomst#content',
+  '@id': 'https://argu.co/info/blogs/online-huurdersparticipatie-is-de-toekomst#content',
   [rdfx.type]: elements.Document,
 
   [elements.children]: seq([
@@ -6190,7 +6190,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 7 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/verwachtingsmanagement-bij-participatie#content',
+  '@id': 'https://argu.co/info/blogs/verwachtingsmanagement-bij-participatie#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -6531,7 +6531,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 8 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/participatieladder-bij-online-participatie#content',
+  '@id': 'https://argu.co/info/blogs/participatieladder-bij-online-participatie#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -6625,7 +6625,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 9 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/online-participatie-biedt-een-betere-dynamiek#content',
+  '@id': 'https://argu.co/info/blogs/online-participatie-biedt-een-betere-dynamiek#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -6748,7 +6748,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 10 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente#content',
+  '@id': 'https://argu.co/info/blogs/een-succesvol-participatietraject-hoe-doe-je-dat-als-gemeente#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -7156,7 +7156,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 11 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/de-vloeken-van-burgerparticipatie#content',
+  '@id': 'https://argu.co/info/blogs/de-vloeken-van-burgerparticipatie#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -7231,7 +7231,7 @@ const commonProductProps = {
         }, // END Text
         {
           [rdfx.type]: elements.A,
-          [ontola.href]: url('https://argu.localdev/info/blogs/verwachtingsmanagement-bij-participatie'),
+          [ontola.href]: url('https://argu.co/info/blogs/verwachtingsmanagement-bij-participatie'),
           [elements.children]: seq([
             {
               [rdfx.type]: elements.InnerText,
@@ -7379,7 +7379,7 @@ const commonProductProps = {
 /************ BLOG CONTENT 12 **************/
 
 {
-  '@id': 'https://argu.localdev/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie#content',
+  '@id': 'https://argu.co/info/blogs/3-succesvolle-strategieen-om-te-starten-met-e-participatie#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -7688,7 +7688,7 @@ const commonProductProps = {
 },
 /************ CASE_CONTENT 0 **************/
 {
-  '@id': 'https://argu.localdev/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie#content',
+  '@id': 'https://argu.co/info/cases/de-drechtsteden-werken-samen-aan-de-energietransitie-en-warmtetransitie#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -7973,7 +7973,7 @@ const commonProductProps = {
 /********** CASE_CONTENT 1 */
 
 {
-  '@id': 'https://argu.localdev/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens#content',
+  '@id': 'https://argu.co/info/cases/discussieplatform-voor-docenten-over-de-centrale-examens#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -8088,7 +8088,7 @@ const commonProductProps = {
 
 
 {
-  '@id': 'https://argu.localdev/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard#content',
+  '@id': 'https://argu.co/info/cases/inwoners-van-heerhugowaard-denken-mee-over-de-herinrichting-van-centrumwaard#content',
   [rdfx.type]: elements.Document,
   "<https://ns.ontola.io/elements#children>": {
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
@@ -8167,7 +8167,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://argu.localdev/heerhugowaard"),
+          "<https://ns.ontola.io/core#href>": url("https://argu.co/heerhugowaard"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -8334,7 +8334,7 @@ const commonProductProps = {
 /************ CASE_CONTENT 3 */
 
 {
-  '@id': 'https://argu.localdev/info/cases/online-huurdersparticipatie-bij-thuisvester#content',
+  '@id': 'https://argu.co/info/cases/online-huurdersparticipatie-bij-thuisvester#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -8346,7 +8346,7 @@ const commonProductProps = {
         }, // END TEXT
         {
           [rdfx.type]: elements.A,
-          [ontola.href]: url('https://argu.localdev/thuisvester/q/223'),
+          [ontola.href]: url('https://argu.co/thuisvester/q/223'),
           [elements.children]: seq([
             {
               [rdfx.type]: elements.InnerText,
@@ -8378,7 +8378,7 @@ const commonProductProps = {
         }, // END TEXT
         {
           [rdfx.type]: elements.A,
-          [ontola.href]: url('https://argu.localdev/thuisvester/q/223'),
+          [ontola.href]: url('https://argu.co/thuisvester/q/223'),
           [elements.children]: seq([
             {
               [rdfx.type]: elements.InnerText,
@@ -8504,7 +8504,7 @@ const commonProductProps = {
   ]),
 },
 {
-  '@id': 'https://argu.localdev/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein#content',
+  '@id': 'https://argu.co/info/cases/inwoners-laten-meedenken-bij-nieuwe-locaties-voor-ondergrondse-containers-in-ijsselstein#content',
   [rdfx.type]: elements.Document,
   [elements.children]: seq([
     {
@@ -8525,11 +8525,11 @@ const commonProductProps = {
         }, // END Text
         {
           [rdfx.type]: elements.A,
-          [ontola.href]: url('https://argu.localdev/ijsselstein'),
+          [ontola.href]: url('https://argu.co/ijsselstein'),
           [elements.children]: seq([
             {
               [rdfx.type]: elements.InnerText,
-              [schema.text]: 'https://argu.localdev/ijsselstein',
+              [schema.text]: 'https://argu.co/ijsselstein',
             }, // END Text
           ]),
         }, // END A
