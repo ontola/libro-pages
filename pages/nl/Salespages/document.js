@@ -1296,154 +1296,163 @@ const commonProductProps = {
     [rdfx.type]: elements.Document,
     [elements.children]: seq([
       {
-        [rdfx.type]: elements.H2,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Hoe werkt het?',
-          }, // END Text
-        ]),
-      }, // END H2
+        [schema.name]: 'Hoe werkt het?',
+        [rdfx.type]: sales.FeatureBlock,
+        [schema.image]: {
+          [rdfx.type]: ontola.ns('PictureSet'),
+          [ontola.ns('format/avif')]: asset('/sales/images/e-democracy.avif'),
+          [ontola.ns('format/jpg')]: asset('/sales/images/e-democracy.jpg'),
+          [ontola.ns('format/webp')]: asset('/sales/images/e-democracy.webp'),
+        },
+        [sales.direction]: 'foreward',
+        [schema.text]: seq([
+            {
+              [rdfx.type]: elements.Ul,
+              [elements.children]: seq([
+                {
+                  [rdfx.type]: elements.Li,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Je start een community waar mensen samen kunnen komen.',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                }, // END Li
+                {
+                  [rdfx.type]: elements.Li,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Op het platform kun je vraagstukken, stellingen en enquêtes plaatsen, al dan niet gekoppeld aan thema’s.',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                }, // END Li
+                {
+                  [rdfx.type]: elements.Li,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Je kunt reageren op de reacties die de deelnemers geven, maar ook kunnen deelnemers op elkaar reageren.',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                }, // END Li
+                {
+                  [rdfx.type]: elements.Li,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Via het platform blijven de deelnemers op de hoogte van wat er met hun input gebeurt.',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                }, // END Li
+              ]),
+            }, // END Ul
+            {
+              [rdfx.type]: elements.P,
+              [elements.children]: seq([
+                {
+                  [rdfx.type]: elements.InnerText,
+                  [schema.text]: 'Wij bieden het kant-en-klare platform aan samen met persoonlijke begeleiding. Door de jaren heen hebben wij tal van forums/ discussieplatformen voorbij zien komen. Onze inzichten nemen wij graag mee om jou te helpen een effectief online forum te starten.',
+                }, // END Text
+              ]),
+            }, // END P
+          ]),
+      }, // END FeatureBlock
       {
-        [rdfx.type]: elements.Ul,
-        [elements.children]: seq([
+        [rdfx.type]: sales.FeatureBlock,
+        [schema.image]: {
+          [rdfx.type]: ontola.ns('PictureSet'),
+          [ontola.ns('format/avif')]: asset('/sales/images/community.avif'),
+          [ontola.ns('format/png')]: asset('/sales/images/community.png'),
+          [ontola.ns('format/jpg')]: asset('/sales/images/community.jpg'),
+          [ontola.ns('format/webp')]: asset('/sales/images/community.webp'),
+        },
+        [sales.direction]: 'reverse',
+        [schema.name]: 'Welke resultaten kun je verwachten?',
+        [schema.text]: seq([
           {
-            [rdfx.type]: elements.Li,
+            [rdfx.type]: elements.Ul,
             [elements.children]: seq([
               {
-                [rdfx.type]: elements.P,
+                [rdfx.type]: elements.Li,
                 [elements.children]: seq([
                   {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Je start een community waar mensen samen kunnen komen.',
-                  }, // END Text
+                    [rdfx.type]: elements.P,
+                    [elements.children]: seq([
+                      {
+                        [rdfx.type]: elements.InnerText,
+                        [schema.text]: 'Je bouwt een betrokken groep van bijvoorbeeld inwoners, vakgenoten of collega’s.',
+                      }, // END Text
+                    ]),
+                  }, // END P
                 ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
+              }, // END Li
               {
-                [rdfx.type]: elements.P,
+                [rdfx.type]: elements.Li,
                 [elements.children]: seq([
                   {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Op het platform kun je vraagstukken, stellingen en enquêtes plaatsen, al dan niet gekoppeld aan thema’s.',
-                  }, // END Text
+                    [rdfx.type]: elements.P,
+                    [elements.children]: seq([
+                      {
+                        [rdfx.type]: elements.InnerText,
+                        [schema.text]: 'Je helpt mensen om elkaar te helpen.',
+                      }, // END Text
+                    ]),
+                  }, // END P
                 ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
+              }, // END Li
               {
-                [rdfx.type]: elements.P,
+                [rdfx.type]: elements.Li,
                 [elements.children]: seq([
                   {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Je kunt reageren op de reacties die de deelnemers geven, maar ook kunnen deelnemers op elkaar reageren.',
-                  }, // END Text
+                    [rdfx.type]: elements.P,
+                    [elements.children]: seq([
+                      {
+                        [rdfx.type]: elements.InnerText,
+                        [schema.text]: 'Meet draagvlak of krijg inzicht in het sentiment.',
+                      }, // END Text
+                    ]),
+                  }, // END P
                 ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
+              }, // END Li
               {
-                [rdfx.type]: elements.P,
+                [rdfx.type]: elements.Li,
                 [elements.children]: seq([
                   {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Via het platform blijven de deelnemers op de hoogte van wat er met hun input gebeurt.',
-                  }, // END Text
+                    [rdfx.type]: elements.P,
+                    [elements.children]: seq([
+                      {
+                        [rdfx.type]: elements.InnerText,
+                        [schema.text]: 'Hoe groter de groep deelnemers, hoe waardevoller de discussie wordt.',
+                      }, // END Text
+                    ]),
+                  }, // END P
                 ]),
-              }, // END P
+              }, // END Li
             ]),
-          }, // END Li
+          }, // END Ul
         ]),
-      }, // END Ul
-      {
-        [rdfx.type]: elements.P,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Wij bieden het kant-en-klare platform aan samen met persoonlijke begeleiding. Door de jaren heen hebben wij tal van forums/ discussieplatformen voorbij zien komen. Onze inzichten nemen wij graag mee om jou te helpen een effectief online forum te starten.',
-          }, // END Text
-        ]),
-      }, // END P
-      {
-        [rdfx.type]: elements.H2,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Welke resultaten kun je verwachten?',
-          }, // END Text
-        ]),
-      }, // END H2
-      {
-        [rdfx.type]: elements.Ul,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
-              {
-                [rdfx.type]: elements.P,
-                [elements.children]: seq([
-                  {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Je bouwt een betrokken groep van bijvoorbeeld inwoners, vakgenoten of collega’s.',
-                  }, // END Text
-                ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
-              {
-                [rdfx.type]: elements.P,
-                [elements.children]: seq([
-                  {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Je helpt mensen om elkaar te helpen.',
-                  }, // END Text
-                ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
-              {
-                [rdfx.type]: elements.P,
-                [elements.children]: seq([
-                  {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Meet draagvlak of krijg inzicht in het sentiment.',
-                  }, // END Text
-                ]),
-              }, // END P
-            ]),
-          }, // END Li
-          {
-            [rdfx.type]: elements.Li,
-            [elements.children]: seq([
-              {
-                [rdfx.type]: elements.P,
-                [elements.children]: seq([
-                  {
-                    [rdfx.type]: elements.InnerText,
-                    [schema.text]: 'Hoe groter de groep deelnemers, hoe waardevoller de discussie wordt.',
-                  }, // END Text
-                ]),
-              }, // END P
-            ]),
-          }, // END Li
-        ]),
-      }, // END Ul
+      }, // END FeatureBlock      
     ]),
   },
   [sales.featureTitle]: 'Waarom een participatie platform bij Argu?',
