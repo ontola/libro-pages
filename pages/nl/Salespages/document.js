@@ -3235,32 +3235,88 @@ const commonProductProps = {
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/heart'),
     [schema.name]: "Onze kracht",
-    [schema.text]: 'Meer dan <b>150</b> klanten gingen je voor',
-  },
+    [schema.text]: seq([
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: 'Meer dan ',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [elements.bold]: true,
+        [schema.text]: '150',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: ' klanten gingen je voor',
+      },
+    ]), // END seq
+  }, // END Proposition
   [rdfx.ns('_02')]: {
     [rdfx.type]: sales.Proposition,
     [schema.color]: '#2D7080',
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/comments'),
     [schema.name]: "Meer betrokkenheid",
-    [schema.text]: 'Gemiddeld <b>75%</b> meer betrokkenheid',
-  },
+    [schema.text]: seq([
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: 'Gemiddeld ',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [elements.bold]: true,
+        [schema.text]: '75%',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: ' meer betrokkenheid',
+      },
+    ]), // END seq
+  }, // END Proposition
   [rdfx.ns('_03')]: {
     [rdfx.type]: sales.Proposition,
     [schema.color]: '#ACD9E3',
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/bolt'),
     [schema.name]: "Snel online",
-    [schema.text]: 'Binnen <b>2</b> werkdagen online',
-  },
+    [schema.text]: seq([
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: 'Binnen ',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [elements.bold]: true,
+        [schema.text]: '2',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: ' werkdagen online',
+      },
+    ]), // END seq
+  }, // END Proposition
   [rdfx.ns('_04')]: {
     [rdfx.type]: sales.Proposition,
     [schema.color]: '#DE9271',
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/unlock-alt'),
     [schema.name]: "Volledig veilig",
-    [schema.text]: 'Voldoet aan <b>alle</b> wet- en regelgeving (AVG, WCAG)',
-  },
+    [schema.text]: seq([
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: 'Voldoet aan ',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [elements.bold]: true,
+        [schema.text]: 'alle',
+      },
+      {
+        [rdfx.type]: elements.InnerText,
+        [schema.text]: '  wet- en regelgeving (AVG, WCAG)',
+      },
+    ]), // END seq
+  }, // END Proposition
 },
 
 {
