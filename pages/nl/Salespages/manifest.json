@@ -7,7 +7,12 @@
     "allowed_external_sources": [],
     "css_class": "salesWebsite",
     "header_background": "common",
-    "google_analytics_ua_code": "G-V4XW9DF23D",
+    "tags": [
+      {
+        "type": "GTM",
+        "container_id": "G-V4XW9DF23D"
+      }
+    ],
     "preconnect": [
       "https://argu-logos.s3.amazonaws.com",
       "https://dptr8y9slmfgv.cloudfront.net"
