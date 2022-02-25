@@ -4886,7 +4886,7 @@ const commonProductProps = {
     },
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_16>": {
       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#Img"),
-      "<https://ns.ontola.io/core#href>": url("https://ontola.io/img/posts/ori/zoek-openraadsinformatie.jpg"),
+      "<https://ns.ontola.io/core#href>": url("https://ontola.io/_next/image/?url=%2Fimages%2Fposts%2Fori%2Fzoek-openraadsinformatie.jpg&w=3840&q=75"),
       "<https://ns.ontola.io/elements#children>": {
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4947,7 +4947,7 @@ const commonProductProps = {
     },
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_19>": {
       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#Img"),
-      "<https://ns.ontola.io/core#href>": url("https://ontola.io/img/posts/ori/raadstalk.jpg"),
+      "<https://ns.ontola.io/core#href>": url("https://ontola.io/_next/image/?url=%2Fimages%2Fposts%2Fori%2Fraadstalk.jpg&w=3840&q=75"),
       "<https://ns.ontola.io/elements#children>": {
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4976,7 +4976,7 @@ const commonProductProps = {
         },
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_01>": {
           "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#A"),
-          "<https://ns.ontola.io/core#href>": url("https://ontola.io/img/posts/waaroverheid.jpg"),
+          "<https://ns.ontola.io/core#href>": url("https://waaroverheid.nl/"),
           "<https://ns.ontola.io/elements#children>": {
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
             "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -4993,7 +4993,7 @@ const commonProductProps = {
     },
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_22>": {
       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#Img"),
-      "<https://ns.ontola.io/core#href>": url("https://ontola.io/img/posts/ori/waaroverheid.jpg"),
+      "<https://ns.ontola.io/core#href>": url("https://ontola.io/_next/image/?url=%2Fimages%2Fposts%2Fori%2Fwaaroverheid.jpg&w=3840&q=75"),
       "<https://ns.ontola.io/elements#children>": {
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
@@ -5039,7 +5039,7 @@ const commonProductProps = {
     },
     "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_25>": {
       "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("https://ns.ontola.io/elements#Img"),
-      "<https://ns.ontola.io/core#href>": url("https://ontola.io/img/posts/ori/1848.jpg"),
+      "<https://ns.ontola.io/core#href>": url("https://ontola.io/_next/image/?url=%2Fimages%2Fposts%2Fori%2F1848.jpg&w=3840&q=75"),
       "<https://ns.ontola.io/elements#children>": {
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>": url("http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"),
         "<http://www.w3.org/1999/02/22-rdf-syntax-ns#_00>": {
