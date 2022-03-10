@@ -2245,151 +2245,579 @@ const commonProductProps = {
 /***************** PRICING *****************/
 
 {
-  '@id': 'https://argu.co/info/prijzen',
-  [rdfx.type]: sales.ns('PricingPage'),
-  [schema.name]: 'Prijs - Argu',
-  [schema.description]: 'Van burgerparticipatie tot community. Wij werken met vaste tarieven. Zo weet jij wat je kan verwachten van het begin tot de eindevaluatie.',
-  [ontola.coverPhoto]: url('https://argu.co/info#CoverImage'),
+  "@id": "https://argu.co/info/prijzen",
+  [rdfx.type]: sales.PricingPage,
+  [schema.name]: "Prijs - Argu",
+  [schema.description]: "Van burgerparticipatie tot community. Wij werken met vaste tarieven. Zo weet jij wat je kan verwachten van het begin tot de eindevaluatie.",
+  [ontola.coverPhoto]: url("https://argu.co/info#CoverImage"),
   [sales.header]: {
     [rdfx.type]: sales.Header,
-    [schema.name]: 'Onze prijzen',
-    // [schema.text]: 'Precies weten waar je aan toe bent. Wij werken met vaste tarieven.',
-    ...commonHeaderBGProps,
+    [schema.name]: "Onze prijzen",
+    [schema.text]: 'Precies weten waar je aan toe bent. Wij werken met vaste tarieven.',
+    [sales.backgroundImage]: url("https://dptr8y9slmfgv.cloudfront.net/sales/images/header.svg"),
+    [sales.backgroundImageMobile]: url("https://dptr8y9slmfgv.cloudfront.net/sales/images/header_mobile.svg"),
+    [sales.backgroundImageXL]: url("https://dptr8y9slmfgv.cloudfront.net/sales/images/header_xl.svg"),
   },
-  [sales.callToActionBlock]: url('https://argu.co/info#CTABlock'),
-  [sales.ns('tiers')]: {
-    [rdfx.type]: rdfx.Seq,
-    [rdfx.ns('_0')]: {
-      [rdfx.type]: sales.ns('Tier'),
-      [schema.name]: 'Basis',
-      [schema.text]: 'Start een eenmalig traject waarmee u toegang heeft tot alle functionaliteiten.',
-
-      [sales.ns('priceInterval')]: 'traject',
-      [sales.ns('priceUnit')]: '€ 3000',
-      [sales.ns('includes')]: {
-        [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_0')]: {
-          [rdfx.type]: elements.Document,
-          [elements.children]: seq([
+  [sales.callToActionBlock]: url("https://argu.co/info#CTABlock"),
+  [sales.tiers]: seq([
+    url('https://argu.co/info/prijzen#basisTier'),
+    url('https://argu.co/info/prijzen#standaardTier'),
+    url('https://argu.co/info/prijzen#customTier'),
+  ]),
+  [sales.sections]: seq([
+    {
+      [rdfx.type]: sales.ComparisonTable,
+      [schema.text]: 'Belijk de volledige lijst met functionaliteiten',
+      [sales.tiers]: seq([
+        url('https://argu.co/info/prijzen#basisTier'),
+        url('https://argu.co/info/prijzen#standaardTier'),
+      ]),
+      [sales.sections]: seq([
+        {
+          [rdfx.type]: sales.ComparisonTableGroup,
+          [schema.text]: 'Gebruiksvriendelijk',
+          [as.items]: seq([
             {
-              [rdfx.type]: elements.Span,
-              [elements.children]: seq([
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Gebruiksvriendelijk platform dat op alle apparaten werkt',
+              [schema.text]: 'Argu is een responsive webapplicatie.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Look and feel aanpassen naar huisstijl',
+              [schema.text]: 'Het platform is eenvoudig aan te passen naar jouw huisstijl.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Voldoet aan WCAG standaarden',
+              [schema.text]: 'Voor mensen met een visuele of auditieve beperking is het platform goed te gebruiken.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Eenvoudig registratieproces',
+              [schema.text]: 'Gebruikers kunnen alle content zien en hoeven pas te registreren nádat ze ergens op hebben gestemd. Liever een besloten omgeving? Dan kan je mensen uitnodigen via een veilige stemcode.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Zoeken',
+              [schema.text]: 'Alle Items die je op Argu kan bekijken, zijn doorzoekbaar. Je kunt de zoekresultaten ook filteren en sorteren',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Exporteren',
+              [schema.text]: 'Alle Items op Argu kunnen worden geëxporteerd. Dat kan per discussie, maar ook per forum.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Hergebruik (API)',
+              [schema.text]: 'Alle informatie die je ziet op Argu, wordt middels de API gecommuniceerd. Deze API kan je ook zelf hergebruiken in andere applicaties.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Redirects',
+              [schema.text]: 'Maak handige, leesbare URLs aan om het delen makkelijker te maken.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+          ])
+        },
+        {
+          [rdfx.type]: sales.ComparisonTableGroup,
+          [schema.text]: 'Verhogen van de betrokkenheid',
+          [as.items]: seq([
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Meldingen/ notifications',
+              [schema.text]: 'Volg items en ontvang e-mails bij nieuwe berichten. Zo krijg je tot 350% meer interactie.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Updates',
+              [schema.text]: 'Houd mensen op de hoogte en koppel terug via updates.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Interactief gebruik van kaarten',
+              [schema.text]: 'Laat gebruikers items op de kaart prikken.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Groepen- en rechtenbeheer',
+              [schema.text]: 'Bepaal per item of forum wie wat mag bekijken of kan reageren.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Bijlagen en filmpjes',
+              [schema.text]: 'Je kunt bestanden en externe (youtube) video\'s koppelen aan items.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Banners',
+              [schema.text]: 'Gebruik een banner om een belangrijke boodschap te delen met al je bezoekers, zoals \"Dit forum is gesloten\".',
+              [sales.tiers]: seq([
+                { [rdfx.type]: schema.Thing, },
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+          ])
+        },
+        {
+          [rdfx.type]: sales.ComparisonTableGroup,
+          [schema.text]: 'Veiligheid & privacy',
+          [as.items]: seq([
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'AVG-proof',
+              [schema.text]: 'Alleen e-mailadres en gebruikersnaam zijn verplicht.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Privacy-vriendelijke user tracking',
+              [schema.text]: 'Geen tracking via Facebook, Google of anderen.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Privacy-vriendelijke statistieken',
+              [schema.text]: 'In plaats van Google Analytics gebruiken we Matomo.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+          ])
+        },
+        {
+          [rdfx.type]: sales.ComparisonTableGroup,
+          [schema.text]: 'Participatietools',
+          [as.items]: seq([
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Ideegeneratie',
+              [schema.text]: 'Met onze unieke discussietool kun je ideeën verzamelen en draagvlak meten.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Scenario discussie',
+              [schema.text]: 'Laat mensen kiezen uit opties die ieder hun eigen voor- en nadelen hebben.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Stemmen',
+              [schema.text]: 'Via Argu kun je gebruikers laten stemmen op ideeën. Met losse voor- en tegenargumenten blijven discussies overzichtelijk.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Vragenlijsten',
+              [schema.text]: 'Maak een professionele enquête en analyseer de resultaten.',
+              [sales.tiers]: seq([
+                url('https://argu.co/info/prijzen#basisTier'),
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Traject',
+              [schema.text]: 'Met een traject betrek je mensen over een langere periode en ga je gefaseerd te werk.',
+              [sales.tiers]: seq([
+                { [rdfx.type]: schema.Thing, },
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Begrotingstool',
+              [schema.text]: 'Laat mensen meedenken bij het verdelen en toekennen van budgetten.',
+              [sales.tiers]: seq([
+                { [rdfx.type]: schema.Thing, },
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Swipetool',
+              [schema.text]: 'Laat mensen eenvoudig stemmen door te swipen. Leent zich erg goed voor flits peilingen of een pol.',
+              [sales.tiers]: seq([
+                { [rdfx.type]: schema.Thing, },
+                url('https://argu.co/info/prijzen#standaardTier'),
+              ]),
+            },
+          ])
+        },
+        {
+          [rdfx.type]: sales.ComparisonTableGroup,
+          [schema.text]: 'Algemeen',
+          [as.items]: seq([
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Aantal admins',
+              [schema.text]: 'Met adminrechten kan je de instellingen van het platform wijzigen en bewerken.',
+              [sales.tiers]: seq([
                 {
-                  [rdfx.type]: elements.InnerText,
-                  [schema.text]: 'Beschikking over alle ',
-                },
-                {
-                  [rdfx.type]: elements.A,
-                  [ontola.href]: url("https://argu.co/info/functionaliteiten"),
+                  [rdfx.type]: elements.Document,
                   [elements.children]: seq([
                     {
-                      [rdfx.type]: elements.InnerText,
-                      [schema.text]: 'functionaliteiten',
-                    },
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: '1',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                },
+                {
+                  [rdfx.type]: elements.Document,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Onbeperkt',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                },
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'URL keuze',
+              [schema.text]: 'Maak gebruik van Argu op een argu.co subdomein of op een URL naar keuze.',
+              [sales.tiers]: seq([
+                {
+                  [rdfx.type]: elements.Document,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Op een argu.co subdomein',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                },
+                {
+                  [rdfx.type]: elements.Document,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Naar keuze',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                },
+              ]),
+            },
+            {
+              [rdfx.type]: sales.ComparisonTableItem,
+              [schema.name]: 'Aantal platformen',
+              [schema.text]: 'Gebruik Argu zoveel als je wil',
+              [sales.tiers]: seq([
+                {
+                  [rdfx.type]: elements.Document,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: '1',
+                        }, // END Text
+                      ]),
+                    }, // END P
+                  ]),
+                },
+                {
+                  [rdfx.type]: elements.Document,
+                  [elements.children]: seq([
+                    {
+                      [rdfx.type]: elements.P,
+                      [elements.children]: seq([
+                        {
+                          [rdfx.type]: elements.InnerText,
+                          [schema.text]: 'Onbeperkt',
+                        }, // END Text
+                      ]),
+                    }, // END P
                   ]),
                 },
               ]),
             },
           ])
         },
-        [rdfx.ns('_1')]: 'Aangepast aan huisstijl',
-        [rdfx.ns('_2')]: 'Onbeperkte persoonlijke begeleiding',
-        [rdfx.ns('_3')]: 'Eigen domeinnaam',
-      },
-      [sales.buttonLink]: url('https://argu.co/info/contact'),
+      ])
     },
-    [rdfx.ns('_1')]: {
-      [rdfx.type]: sales.ns('Tier'),
-      [schema.name]: 'Standaard',
-      [schema.text]: 'Een volledig aanpasbare online omgeving.',
-      [sales.tagline]: 'Alles van Basic, plus:',
-      [sales.ns('bestOffer')]: 'true',
-      [sales.ns('priceInterval')]: 'jaar',
-      [sales.ns('priceUnit')]: '€ 12.000',
-      [sales.ns('includes')]: {
-        [rdfx.type]: rdfx.Seq,
-        [rdfx.ns('_1')]: 'Onbeperkt aantal trajecten',
-        [rdfx.ns('_2')]: 'Meerdere platforms mogelijk',
-        [rdfx.ns('_3')]: 'Begrotingstool',
-      },
-      [sales.buttonLink]: url('https://argu.co/info/contact'),
+    {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.H2,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: "Stichting of vereniging?",
+            },
+          ]),
+        },
+        {
+          [rdfx.type]: elements.P,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.A,
+              [ontola.href]: url("https://argu.co/info/contact"),
+              [elements.children]: seq([
+                {
+                  [rdfx.type]: elements.InnerText,
+                  [schema.text]: "Neem contact met ons op",
+                },
+              ]),
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: " om de mogelijkheden te bespreken. Je ontvangt van ons een passend voorstel.",
+            },
+          ]),
+        },
+        {
+          [rdfx.type]: elements.H2,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: "Partner worden?",
+            },
+          ]),
+        },
+        {
+          [rdfx.type]: elements.P,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: "Dat kan! Wij bieden onze software aan voor resellers tegen andere tarieven. Neem ",
+            },
+            {
+              [rdfx.type]: elements.A,
+              [ontola.href]: url("https://argu.co/info/contact"),
+              [elements.children]: seq([
+                {
+                  [rdfx.type]: elements.InnerText,
+                  [schema.text]: "contact met ons op",
+                },
+              ]),
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: " om de mogelijkheden te bespreken.",
+            },
+          ]),
+        },
+      ]),
     },
-    [rdfx.ns('_2')]: {
-      [rdfx.type]: sales.ns('Tier'),
-      [schema.name]: 'Software op maat',
-      [schema.text]: 'Wil je enkele aanpassingen? Geen probleem! Wij houden ervan om nieuwe functionaliteiten te ontwikkelen. Lees meer over onze maatwerk oplossingen.',
-      [sales.tagline]: 'Alles van Standaard is inbegrepen.',
-      [sales.ns('priceUnit')]: 'Op aanvraag',
-      [sales.buttonLink]: url('https://argu.co/info/contact'),
-    },
-  },
-  [argu.lowerSection]: {
+  ])
+},
+{
+  '@id': 'https://argu.co/info/prijzen#basisTier',
+  [rdfx.type]: sales.Tier,
+  [schema.color]: '#DE9271',
+  [schema.name]: "Basis",
+  [schema.text]: {
     [rdfx.type]: elements.Document,
     [elements.children]: seq([
       {
-        [rdfx.type]: elements.H2,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Stichting of vereniging?',
-          },
-        ]),
-      }, // END H2
-      {
-        [rdfx.type]: elements.P,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.co/info/contact'),
-            [elements.children]: seq([
-              {
-                [rdfx.type]: elements.InnerText,
-                [schema.text]: 'Neem contact met ons op',
-              },
-            ]),
-          }, // END A
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: ' om de mogelijkheden te bespreken. Je ontvangt van ons een passend voorstel.',
-          },
-        ]),
-      }, // END P
-      {
-        [rdfx.type]: elements.H2,
-        [elements.children]: seq([
-          {
-            [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Partner worden?',
-          },
-        ]),
-      },
-      {
         [rdfx.type]: elements.P,
         [elements.children]: seq([
           {
             [rdfx.type]: elements.InnerText,
-            [schema.text]: 'Dat kan! Wij bieden onze software aan voor resellers tegen andere tarieven. Neem ',
+            [schema.text]: 'Ga zelf aan de slag met Argu aan de hand van de '
           },
           {
             [rdfx.type]: elements.A,
-            [ontola.href]: url('https://argu.co/info/contact'),
+            [ontola.href]: url('https://argu.co/academy'),
             [elements.children]: seq([
               {
                 [rdfx.type]: elements.InnerText,
-                [schema.text]: 'contact met ons op',
+                [schema.text]: 'Argu Academy'
               }
             ])
           },
+        ]),
+      },
+    ])
+  },
+  [schema.price]: {
+    [rdfx.type]: sales.Price,
+    [schema.color]: '#DE9271',
+    [sales.priceMonthly]: 95,
+    [sales.priceYearly]: 1026,
+  },
+  [sales.includes]: seq([
+    "Een community platform in jouw huisstijl",
+    "Op een argu.co subdomein",
+    "1 admin",
+  ]),
+  [sales.buttonLink]: url("https://argu.co/info/contact"),
+},
+{
+  '@id': 'https://argu.co/info/prijzen#standaardTier',
+  [rdfx.type]: sales.Tier,
+  [schema.color]: '#2D7080',
+  [schema.name]: "Standaard",
+  [schema.text]: {
+    [rdfx.type]: elements.Document,
+    [elements.children]: seq([
+      {
+        [rdfx.type]: elements.P,
+        [elements.children]: seq([
           {
             [rdfx.type]: elements.InnerText,
-            [schema.text]: ' om de mogelijkheden te bespreken.',
+            [schema.text]: 'Een volledig aanpasbaar community platform'
           },
         ]),
       },
-    ]),
+    ])
   },
+  [schema.price]: {
+    [rdfx.type]: sales.Price,
+    [schema.color]: '#2D7080',
+    [sales.priceMonthly]: 395,
+    [sales.priceYearly]: 4266,
+  },
+  [sales.tagline]: "Alles van Basic, plus:",
+  [sales.includes]: seq([
+    {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.Span,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: "Beschikking over alle ",
+            },
+            {
+              [rdfx.type]: elements.A,
+              [ontola.href]: url("https://argu.co/info/functionaliteiten"),
+              [elements.children]: seq([
+                {
+                  [rdfx.type]: elements.InnerText,
+                  [schema.text]: "functionaliteiten",
+                },
+              ]),
+            },
+          ]),
+        },
+      ]),
+    },
+    "Eigen domeinnaam",
+    "Meerdere platforms mogelijk",
+  ]),
+  [sales.buttonLink]: url("https://argu.co/info/contact"),
 },
-
+{
+  '@id': 'https://argu.co/info/prijzen#customTier',
+  [rdfx.type]: sales.Tier,
+  [schema.color]: '#ACD9E3',
+  [schema.name]: "Software op maat",
+  [schema.text]: {
+    [rdfx.type]: elements.Document,
+    [elements.children]: seq([
+      {
+        [rdfx.type]: elements.P,
+        [elements.children]: seq([
+          {
+            [rdfx.type]: elements.InnerText,
+            [schema.text]: 'Wil je net even wat anders? Geen probleem! Wij houden ervan om nieuwe functionaliteiten te ontwikkelen.'
+          },
+        ]),
+      },
+    ])
+  },
+  [schema.price]: {
+    [rdfx.type]: sales.Price,
+    [schema.color]: 'inherit',
+    [sales.priceStatic]: 'Op aanvraag',
+  },
+  [sales.tagline]: "Alles van Standaard is inbegrepen.",
+  [sales.buttonLink]: url("https://argu.co/info/contact"),
+},
 /***************** CASES *****************/
 
 {
