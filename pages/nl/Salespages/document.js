@@ -3663,21 +3663,24 @@ const commonProductProps = {
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/heart'),
     [schema.name]: "Onze kracht",
-    [schema.text]: seq([
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: 'Meer dan ',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [elements.bold]: true,
-        [schema.text]: '150',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: ' klanten gingen je voor',
-      },
-    ]), // END seq
+    [schema.text]: {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.InnerText,
+          [schema.text]: 'Meer dan ',
+        },
+        {
+          [rdfx.type]: elements.InnerText,
+          [elements.bold]: true,
+          [schema.text]: '150',
+        },
+        {
+          [rdfx.type]: elements.InnerText,
+          [schema.text]: ' klanten gingen je voor',
+        },
+      ]), // END seq
+    },
   }, // END Proposition
   [rdfx.ns('_02')]: {
     [rdfx.type]: sales.Proposition,
@@ -3685,21 +3688,29 @@ const commonProductProps = {
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/comments'),
     [schema.name]: "Meer betrokkenheid",
-    [schema.text]: seq([
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: 'Gemiddeld ',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [elements.bold]: true,
-        [schema.text]: '75%',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: ' meer betrokkenheid',
-      },
-    ]), // END seq
+    [schema.text]: {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.P,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: 'Gemiddeld ',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [elements.bold]: true,
+              [schema.text]: '75%',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: ' meer betrokkenheid',
+            },
+          ]), // END seq
+        }, // END P
+      ]), // END seq
+    },
   }, // END Proposition
   [rdfx.ns('_03')]: {
     [rdfx.type]: sales.Proposition,
@@ -3707,21 +3718,29 @@ const commonProductProps = {
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/bolt'),
     [schema.name]: "Snel online",
-    [schema.text]: seq([
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: 'Binnen ',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [elements.bold]: true,
-        [schema.text]: '2',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: ' werkdagen online',
-      },
-    ]), // END seq
+    [schema.text]: {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.P,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: 'Binnen ',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [elements.bold]: true,
+              [schema.text]: '2',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: ' werkdagen online',
+            },
+          ]), // END seq
+        }, // END P
+      ]), // END seq
+    },
   }, // END Proposition
   [rdfx.ns('_04')]: {
     [rdfx.type]: sales.Proposition,
@@ -3729,21 +3748,29 @@ const commonProductProps = {
     [sales.textColor]: '#000',
     [schema.image]: url('http://fontawesome.io/icon/unlock-alt'),
     [schema.name]: "Volledig veilig",
-    [schema.text]: seq([
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: 'Voldoet aan ',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [elements.bold]: true,
-        [schema.text]: 'alle',
-      },
-      {
-        [rdfx.type]: elements.InnerText,
-        [schema.text]: '  wet- en regelgeving (AVG, WCAG)',
-      },
-    ]), // END seq
+    [schema.text]: {
+      [rdfx.type]: elements.Document,
+      [elements.children]: seq([
+        {
+          [rdfx.type]: elements.P,
+          [elements.children]: seq([
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: 'Voldoet aan ',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [elements.bold]: true,
+              [schema.text]: 'alle',
+            },
+            {
+              [rdfx.type]: elements.InnerText,
+              [schema.text]: '  wet- en regelgeving (AVG, WCAG)',
+            },
+          ]),
+        } // END P
+      ])
+    },
   }, // END Proposition
 },
 
